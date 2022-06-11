@@ -59,7 +59,7 @@ export default function events() {
 
         const activeDay = cards.find(day => day.classList.contains('active'));
 
-       
+        
         if (activeDay) {
             gsap.to(scrollContainer, {
                 duration: 0,

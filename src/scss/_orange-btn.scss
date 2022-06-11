@@ -1,0 +1,18 @@
+.orange-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 1.5rem;
+    background: #ff9770;
+    border-radius: 0.6rem;
+    color: white;
+    padding: .9rem 4.5rem;
+    &:link,
+    &:visited {
+        color: white;
+    }
+}

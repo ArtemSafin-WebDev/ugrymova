@@ -1,0 +1,230 @@
+.modal {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    height: 100%;
+    z-index: 120;
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+    background: rgba(#000000, 0.35);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.4s, visibility 0s linear 0.4s;
+
+    &--large-padding {
+        padding: 5rem;
+    }
+
+    @include breakpoint(mobile) {
+        padding: 10rem 0;
+    }
+
+    .no-touch & {
+        @include customScrollbar();
+        overflow-y: scroll;
+    }
+
+    &:not(.active) {
+        right: calc(-1 * var(--sb-width, 0));
+    }
+
+    &.active {
+        opacity: 1;
+        visibility: inherit;
+        transition: opacity 0.4s, visibility 0.4s;
+    }
+}
+
+.modal__inner {
+    width: 100%;
+    margin: auto;
+    max-width: 36rem;
+    position: relative;
+    background-color: #fff;
+    padding: 3rem;
+    border-radius: 2rem;
+    &--wide {
+        max-width: 74rem;
+        padding: 4rem 5rem;
+    }
+
+    @include breakpoint(mobile) {
+        padding: 2.5rem;
+        max-width: none;
+        border-radius: 1.4rem;
+    }
+}
+
+.modal__close {
+    position: absolute;
+    width: 2.4rem;
+    height: 2.4rem;
+    z-index: 20;
+    right: 1.6rem;
+    top: 1.6rem;
+
+    svg {
+        display: block;
+        width: 100%;
+        height: 100%;
+        fill: #9a85a0;
+        transition: fill 0.2s;
+    }
+
+    @include breakpoint(mobile) {
+        bottom: 100%;
+        right: 1.3rem;
+        top: auto;
+        margin-bottom: 0.7rem;
+        width: 3.4rem;
+        height: 3.4rem;
+        svg {
+            fill: white;
+        }
+    }
+
+    .no-touch &:hover,
+    .touch &:active {
+        svg {
+            fill: var(--primary-color);
+        }
+    }
+}
+
+.modal__course {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    grid-gap: 2.5rem;
+
+    @include breakpoint(mobile) {
+        grid-gap: 2.7rem;
+    }
+}
+
+.modal__course-row {
+    display: grid;
+    grid-template-columns: minmax(0, 26rem) minmax(0, 1fr);
+    grid-gap: 1.5rem;
+
+    @include breakpoint(mobile) {
+        grid-template-columns: minmax(0, 1fr);
+        grid-gap: 1.2rem;
+    }
+}
+
+.modal__course-col--centered {
+    align-self: center;
+}
+
+.modal__course-image-wrapper {
+    position: relative;
+    overflow: hidden;
+    backface-visibility: hidden;
+    transform: translateZ(0);
+    border-radius: 0.8rem;
+    &::before {
+        content: '';
+        display: block;
+        padding-bottom: 65%;
+    }
+}
+
+.modal__course-image {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.modal__course-heading {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 2.2rem;
+    line-height: 2.6rem;
+    margin-bottom: 1.6rem;
+}
+
+.modal__course-text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.2rem;
+
+    &--max-width {
+        max-width: 26rem;
+
+        @include breakpoint(mobile) {
+            max-width: none;
+        }
+    }
+
+    p {
+        margin-bottom: 1.7rem;
+        @include breakpoint(mobile) {
+            margin-bottom: 1.2rem;
+        }
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    ol {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr);
+        margin-bottom: 1.7rem;
+        padding-left: 0.5rem;
+
+        @include breakpoint(mobile) {
+            margin-bottom: 1.2rem;
+        }
+        &:last-child {
+            margin-bottom: 0;
+        }
+        & > li {
+            counter-increment: ordered-list;
+            &::before {
+                content: counter(ordered-list) '.';
+            }
+        }
+    }
+}
+
+.modal__course-block-heading {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+}
+
+.modal__course-price {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 2rem;
+    line-height: 1;
+
+    @include breakpoint(mobile) {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 2.8rem;
+        line-height: 1;
+    }
+}
+
+.modal__course-link {
+    width: 100%;
+    margin-top: 3rem;
+
+    @include breakpoint(mobile) {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 1.4rem;
+        line-height: 1.5rem;
+        padding: 1.7rem 3.6rem;
+    }
+}
