@@ -1,0 +1,1666 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="format-detection" content="telephone=no">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>
+        Главная страница
+    </title>
+</head>
+
+<body class="no-touch" ontouchstart="">
+    <div class="sprite" aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;">
+        <?xml version="1.0" encoding="utf-8"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol id="add" viewBox="0 0 13 12" xmlns="http://www.w3.org/2000/svg"><defs><style>.acls-1{fill-rule:evenodd}</style></defs><path class="acls-1" d="M6.5 1.1A4.9 4.9 0 1011.4 6a4.9 4.9 0 00-4.9-4.9zm0 9A4.1 4.1 0 1110.6 6a4.11 4.11 0 01-4.1 4.1z"/><path class="acls-1" d="M6.9 4.1h-.8v1.5H4.6v.8h1.5v1.5h.8V6.4h1.5v-.8H6.9V4.1z"/></symbol><symbol id="arrow-right" viewBox="0 0 12 13" xmlns="http://www.w3.org/2000/svg"><defs><style>.bcls-1{fill-rule:evenodd}</style></defs><path class="bcls-1" d="M10 6.5a.4.4 0 00-.12-.28L6.94 3.31a.42.42 0 00-.57 0 .39.39 0 000 .56L8.62 6.1H2.4a.4.4 0 000 .8h6.22L6.37 9.13a.39.39 0 000 .56.42.42 0 00.57 0l2.94-2.91A.4.4 0 0010 6.5z"/></symbol><symbol id="camera" viewBox="0 0 18.49 16.33" xmlns="http://www.w3.org/2000/svg"><defs><style>.ccls-1{fill-rule:evenodd}</style></defs><path class="ccls-1" d="M5.86.27a.61.61 0 01.5-.27h5.77a.61.61 0 01.5.27l1.26 1.89h2.56a2 2 0 012 2v10.13a2 2 0 01-2 2H2a2 2 0 01-2-2V4.2a2 2 0 012-2h2.6zm.83.93L5.42 3.1a.61.61 0 01-.5.26H2a.85.85 0 00-.84.84v10.09a.85.85 0 00.84.84h14.45a.85.85 0 00.84-.84V4.2a.85.85 0 00-.84-.84h-2.88a.61.61 0 01-.5-.26L11.8 1.2z"/><path class="ccls-1" d="M9.25 6.24a2.64 2.64 0 102.64 2.64 2.64 2.64 0 00-2.64-2.64zM5.41 8.88a3.84 3.84 0 113.84 3.85 3.84 3.84 0 01-3.84-3.85z"/></symbol><symbol id="catalog" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><defs><style>.dcls-1{fill-rule:evenodd}</style></defs><path class="dcls-1" d="M5 3.25h2.18a6.45 6.45 0 01.81 0 1 1 0 01.63.28 1.08 1.08 0 01.29.64 6.37 6.37 0 010 .8v2.21a6.21 6.21 0 010 .8 1 1 0 01-.29.64A1 1 0 018 8.9a6.45 6.45 0 01-.81 0H5a6.37 6.37 0 01-.8 0 1.06 1.06 0 01-.64-.28A1 1 0 013.28 8a6.21 6.21 0 010-.8V5a6.37 6.37 0 010-.8 1.06 1.06 0 01.28-.64 1.06 1.06 0 01.64-.28 6.37 6.37 0 01.8-.03zM4.3 4a.37.37 0 00-.23.08S4 4.14 4 4.29A4.75 4.75 0 004 5v2.16a4.61 4.61 0 000 .73c0 .15 0 .2.08.23s.07.06.23.08a6.79 6.79 0 00.73 0h2.12a6.9 6.9 0 00.73 0c.16 0 .2 0 .23-.08s.06-.08.08-.23a6.29 6.29 0 000-.73V5a6.49 6.49 0 000-.74c0-.15 0-.2-.08-.23A.41.41 0 007.89 4a6.9 6.9 0 00-.73 0H5a6.79 6.79 0 00-.7 0zM5 11.07h2.18a6.45 6.45 0 01.81 0 1 1 0 01.63.28 1 1 0 01.29.64 6.21 6.21 0 010 .8V15a6.37 6.37 0 010 .8 1.08 1.08 0 01-.29.64 1 1 0 01-.63.28 6.45 6.45 0 01-.81 0H5a6.37 6.37 0 01-.8 0 1.06 1.06 0 01-.64-.28 1.06 1.06 0 01-.28-.64 6.37 6.37 0 010-.8v-2.18a6.21 6.21 0 010-.8 1 1 0 01.28-.64 1.06 1.06 0 01.64-.28 6.37 6.37 0 01.8-.03zm-.7.73c-.16 0-.21 0-.23.08S4 12 4 12.11a4.61 4.61 0 000 .73V15a4.75 4.75 0 000 .74c0 .15 0 .2.08.23a.37.37 0 00.22.03 6.79 6.79 0 00.7 0h2.16a6.9 6.9 0 00.73 0 .41.41 0 00.23-.08s.06-.08.08-.23a6.49 6.49 0 000-.74v-2.11a6.29 6.29 0 000-.73c0-.15 0-.2-.08-.23s-.07-.06-.23-.08a6.9 6.9 0 00-.73 0H5a6.79 6.79 0 00-.7 0zM12.82 3.25H15a6.37 6.37 0 01.8 0 1.06 1.06 0 01.64.28 1.06 1.06 0 01.28.64 6.37 6.37 0 010 .8v2.21a6.21 6.21 0 010 .8 1 1 0 01-.28.64 1.06 1.06 0 01-.64.28 6.37 6.37 0 01-.8 0h-2.18a6.45 6.45 0 01-.81 0 1 1 0 01-.63-.28 1 1 0 01-.29-.62 6.21 6.21 0 010-.8V5a6.37 6.37 0 010-.8 1.08 1.08 0 01.29-.64 1 1 0 01.62-.28 6.45 6.45 0 01.82-.03zm-.71.75a.41.41 0 00-.23.08s-.06.08-.08.23a6.49 6.49 0 000 .74v2.11a6.29 6.29 0 000 .73c0 .15 0 .2.08.23s.07.06.23.08a6.9 6.9 0 00.73 0H15a6.79 6.79 0 00.73 0c.16 0 .21 0 .23-.08S16 8 16 7.89a4.61 4.61 0 000-.73V5a4.75 4.75 0 000-.74c0-.15-.05-.2-.08-.23A.37.37 0 0015.7 4a6.79 6.79 0 00-.7 0h-2.16a6.9 6.9 0 00-.73 0zM12.82 11.07H15a6.37 6.37 0 01.8 0 1.06 1.06 0 01.64.28 1 1 0 01.28.64 6.21 6.21 0 010 .8V15a6.37 6.37 0 010 .8 1 1 0 01-.92.92 6.37 6.37 0 01-.8 0h-2.18a6.45 6.45 0 01-.81 0 1 1 0 01-.63-.28 1.08 1.08 0 01-.29-.64 6.37 6.37 0 010-.8v-2.18a6.21 6.21 0 010-.8 1 1 0 01.29-.64 1 1 0 01.62-.28 6.45 6.45 0 01.82-.03zm-.71.73c-.16 0-.2 0-.23.08s-.06.08-.08.23a6.29 6.29 0 000 .73V15a6.49 6.49 0 000 .74c0 .15 0 .2.08.23a.41.41 0 00.23.08 6.9 6.9 0 00.73 0H15a6.79 6.79 0 00.73 0 .37.37 0 00.23-.08s.06-.08.08-.23A4.75 4.75 0 0016 15v-2.16a4.61 4.61 0 000-.73c0-.15-.05-.2-.08-.23s-.07-.06-.23-.08a6.79 6.79 0 00-.73 0h-2.12a6.9 6.9 0 00-.73 0z"/></symbol><symbol id="close" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><defs><style>.ecls-1{fill-rule:evenodd}</style></defs><path class="ecls-1" d="M13.06 11.74l5.47-5.32a.72.72 0 000-1 .75.75 0 00-1.06 0L12 10.71 6.53 5.39a.75.75 0 00-1.06 0 .72.72 0 000 1l5.47 5.32-5.47 5.35a.73.73 0 000 1 .77.77 0 001.06 0L12 12.77l5.47 5.33a.77.77 0 001.06 0 .73.73 0 000-1z"/></symbol><symbol id="exit" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><defs><style>.fcls-1{fill-rule:evenodd}</style></defs><path class="fcls-1" d="M9.66 1.79l3.63.52a19.9 19.9 0 012.4.43 2.86 2.86 0 011.51.85 2.86 2.86 0 01.63 1.61 21.23 21.23 0 01.08 2.44v4.72a21.23 21.23 0 01-.08 2.44 2.86 2.86 0 01-.63 1.61 2.86 2.86 0 01-1.51.85 19.9 19.9 0 01-2.4.43l-3.63.52a16.74 16.74 0 01-2.09.22A2.1 2.1 0 016.13 18a2.13 2.13 0 01-.64-1.37 15.72 15.72 0 01-.08-2.1v-.3h.84v.27a15.66 15.66 0 00.07 2 1.25 1.25 0 00.36.85 1.28 1.28 0 00.89.24 18.06 18.06 0 002-.22l3.57-.51a21.66 21.66 0 002.32-.41A1.8 1.8 0 0017 14.69a21.67 21.67 0 00.07-2.36V7.67A21.67 21.67 0 0017 5.31a2.05 2.05 0 00-.44-1.17 2 2 0 00-1.1-.6 21.66 21.66 0 00-2.32-.41l-3.56-.51a18.06 18.06 0 00-2-.22 1.28 1.28 0 00-.89.24 1.25 1.25 0 00-.36.85 15.66 15.66 0 00-.07 2v.43h-.85v-.44a15.72 15.72 0 01.08-2.1A2.13 2.13 0 016.13 2a2.1 2.1 0 011.44-.44 16.74 16.74 0 012.09.23z"/><path class="fcls-1" d="M10.33 5.57l-.66.52 2.8 3.49H3.33a.42.42 0 000 .84h9.14l-2.8 3.49.66.52L13.87 10z"/></symbol><symbol id="home" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><defs><style>.gcls-1{fill-rule:evenodd}</style></defs><path class="gcls-1" d="M16 7.26a5.25 5.25 0 00-1.55-1.67l-.07-.07-.86-.73a18.43 18.43 0 00-1.88-1.51A2.85 2.85 0 0010 2.71a2.85 2.85 0 00-1.62.57A18.43 18.43 0 006.5 4.79l-.86.73-.07.07A5.25 5.25 0 004 7.26a5.41 5.41 0 00-.27 2.27v3.67a16.34 16.34 0 00.06 1.85 2.14 2.14 0 00.55 1.26 2.1 2.1 0 001.26.54 14 14 0 001.85.07h5.06a14 14 0 001.85-.07 2.1 2.1 0 001.26-.54 2.14 2.14 0 00.55-1.26 16.34 16.34 0 00.06-1.85V9.53A5.41 5.41 0 0016 7.26zm-4.31 8.82H8.33v-3.75a.41.41 0 01.42-.41h2.5a.41.41 0 01.42.41zm3.75-2.91a14.09 14.09 0 01-.06 1.77 1.33 1.33 0 01-.31.78 1.3 1.3 0 01-.78.31 16.78 16.78 0 01-1.77 0v-3.7a1.25 1.25 0 00-1.25-1.25H8.75a1.25 1.25 0 00-1.25 1.25v3.75a16.78 16.78 0 01-1.77 0 1.3 1.3 0 01-.73-.36 1.33 1.33 0 01-.31-.78 14.09 14.09 0 01-.06-1.77V9.63a5.1 5.1 0 01.19-2 5.36 5.36 0 011.36-1.48L7 5.44A21.33 21.33 0 018.84 4 2.06 2.06 0 0110 3.54a2.06 2.06 0 011.16.46A21.33 21.33 0 0113 5.44l.84.71a5.36 5.36 0 011.41 1.46 5.1 5.1 0 01.19 2z"/></symbol><symbol id="interests" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><defs><style>.hcls-1{fill-rule:evenodd}</style></defs><path class="hcls-1" d="M17.65 10.86h-1.36V9.5a.34.34 0 10-.68 0v1.36h-1.36a.34.34 0 00-.34.34.35.35 0 00.34.34h1.36v1.35a.34.34 0 00.68 0v-1.35h1.36a.35.35 0 00.35-.34.34.34 0 00-.35-.34zM4.75 4.75h.68v.68a.34.34 0 00.68 0v-.68h.68a.34.34 0 000-.68h-.68v-.68a.34.34 0 10-.68 0v.68h-.68a.34.34 0 000 .68zM14.25 15.27h-1v-1a.34.34 0 00-.34-.34.34.34 0 00-.34.34v1h-1a.34.34 0 00-.33.34.34.34 0 00.33.34h1v1a.34.34 0 00.34.34.34.34 0 00.34-.34V16h1a.34.34 0 00.34-.34.34.34 0 00-.34-.39zM16.45 4.09l-1.54-1.54a.94.94 0 00-1.32 0l-11 11a.92.92 0 000 1.32l1.53 1.53a.92.92 0 001.32 0l11-11a.94.94 0 00.01-1.31zM4.93 16a.25.25 0 01-.36 0L3 14.43a.25.25 0 010-.36l8-8L12.92 8zm11-11L13.4 7.49 11.51 5.6 14.07 3a.25.25 0 01.36 0L16 4.57a.25.25 0 010 .36z"/></symbol><symbol id="notifications" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><defs><style>.icls-1{fill-rule:evenodd}</style></defs><path class="icls-1" d="M17.11 13.58c-.12-.23-.29-.52-.5-.87l-.51-.86a6.14 6.14 0 01-.84-2.49L15 7.43a5.07 5.07 0 00-10 0l-.26 1.93a6.28 6.28 0 01-.83 2.49l-.52.86c-.21.35-.38.64-.49.87a1.26 1.26 0 00-.16.78 1.3 1.3 0 00.43.77 1.41 1.41 0 00.75.26 9.66 9.66 0 001 0h2.26a3.4 3.4 0 001 1.78 2.64 2.64 0 003.6 0 3.46 3.46 0 001-1.78h2.26a9.56 9.56 0 001 0 1.41 1.41 0 00.75-.26 1.25 1.25 0 00.43-.77 1.32 1.32 0 00-.11-.78zm-5.87 3a1.89 1.89 0 01-1.24.49 1.92 1.92 0 01-1.25-.49 2.61 2.61 0 01-.7-1.17h3.89a2.52 2.52 0 01-.7 1.18zm5.06-2.1a.69.69 0 01-.3.07H4c-.22 0-.28-.06-.29-.07a.46.46 0 01-.15-.26.73.73 0 01.09-.29 7.83 7.83 0 01.47-.82l.5-.85a7.05 7.05 0 001-2.81l.22-1.94a4.24 4.24 0 018.42 0l.22 1.94a7.05 7.05 0 001 2.81l.51.85c.22.37.37.62.46.82a.56.56 0 01.09.29.51.51 0 01-.24.27z"/></symbol><symbol id="payments" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><defs><style>.jcls-1{fill-rule:evenodd}</style></defs><path class="jcls-1" d="M16.63 7.78A1.28 1.28 0 0016.3 7a1.28 1.28 0 00-.75-.33 5.21 5.21 0 00-.6 0 2.92 2.92 0 00.86-1.76 5.66 5.66 0 000-.65v-.19a.84.84 0 00-.74-.73H5.41a2.09 2.09 0 00-2.08 2.08V13a14 14 0 00.07 1.8 2.07 2.07 0 00.54 1.26 2.13 2.13 0 001.26.54 14 14 0 001.85.07h7.56a6.5 6.5 0 00.94 0 1.22 1.22 0 00.75-.33 1.25 1.25 0 00.33-.75 8.65 8.65 0 000-.94V8.72a8.65 8.65 0 000-.94zM5.41 4.17H15v.06a3.83 3.83 0 010 .59 2.07 2.07 0 01-1.83 1.83 3.83 3.83 0 01-.59 0H5.41a1.25 1.25 0 010-2.5zm10.42 9.16h-2.11a.47.47 0 01-.27-.1.42.42 0 01-.09-.27 6.32 6.32 0 010-.86 6.49 6.49 0 010-.86c0-.18.06-.23.09-.26s.09-.08.27-.1a6.41 6.41 0 01.86 0h1.25zm0-3.33h-1.28a8.74 8.74 0 00-.94 0 1.15 1.15 0 00-1.08 1.08 8.94 8.94 0 000 1 8.65 8.65 0 000 .94 1.13 1.13 0 001.08 1.08 6.57 6.57 0 00.94 0h1.28v.41a6.32 6.32 0 010 .86.42.42 0 01-.09.27.47.47 0 01-.27.1H7.08a16.78 16.78 0 01-1.77-.05 1.3 1.3 0 01-.78-.31 1.33 1.33 0 01-.31-.78 14.09 14.09 0 01-.06-1.77V7.08a2.11 2.11 0 001.25.42h9.17a6.32 6.32 0 01.86 0 .32.32 0 01.36.36 6.41 6.41 0 010 .86z"/></symbol><symbol id="products" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><defs><style>.kcls-1{fill-rule:evenodd}</style></defs><path class="kcls-1" d="M12.5 9.58a.41.41 0 00-.41.42 2.09 2.09 0 01-4.17 0 .42.42 0 00-.42-.42.41.41 0 00-.41.42A2.92 2.92 0 0010 12.92 2.92 2.92 0 0012.92 10a.42.42 0 00-.42-.42z"/><path class="kcls-1" d="M16.58 6.15a3.47 3.47 0 00-.51-.92v-.05L15.91 5c-.23-.35-.42-.64-.6-.86a2.05 2.05 0 00-.63-.55 2.16 2.16 0 00-.81-.22H6.18a2.16 2.16 0 00-.81.22 1.94 1.94 0 00-.63.55c-.18.22-.37.51-.61.86L4 5.18v.05a3.7 3.7 0 00-.5.92 3.63 3.63 0 00-.09 1V13a16.34 16.34 0 00-.01 1.8 2.08 2.08 0 00.6 1.26 2.07 2.07 0 001.25.54 14.19 14.19 0 001.86.07H13a14 14 0 001.85-.07 2.13 2.13 0 001.26-.54 2.07 2.07 0 00.54-1.26 14 14 0 00.02-1.8V7.2a3.63 3.63 0 00-.09-1.05zm-12.36.24a3.5 3.5 0 01.44-.75l.12-.17c.24-.37.41-.63.56-.82a1.38 1.38 0 01.38-.34 1.29 1.29 0 01.49-.12h7.6a1.24 1.24 0 01.49.12 1.38 1.38 0 01.38.34c.15.19.32.45.57.82l.12.17a3.27 3.27 0 01.43.75 3.09 3.09 0 01.06.87v.24H4.17v-.24a3.27 3.27 0 01.05-.87zm11.56 8.3a1.33 1.33 0 01-.31.78 1.3 1.3 0 01-.78.31 16.78 16.78 0 01-1.77.05H7.09a17 17 0 01-1.78-.05 1.29 1.29 0 01-.77-.31 1.21 1.21 0 01-.31-.78 14.09 14.09 0 01-.06-1.77V8.33h11.67v4.59a14.09 14.09 0 01-.06 1.77z"/></symbol><symbol id="question" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><defs><style>.lcls-1{fill-rule:evenodd}</style></defs><path class="lcls-1" d="M10 2.92A7.08 7.08 0 1017.09 10 7.08 7.08 0 0010 2.92zM2.09 10A7.92 7.92 0 1110 17.92 7.92 7.92 0 012.09 10z"/><path d="M10.42 15a.42.42 0 01-.42.42.42.42 0 010-.84.42.42 0 01.42.42z"/><path class="lcls-1" d="M7.09 8.33a2.92 2.92 0 015.83 0v.22a3.13 3.13 0 01-1.39 2.6l-.5.33a1.38 1.38 0 00-.61 1.14v.71h-.83v-.71a2.19 2.19 0 011-1.83l.5-.33a2.3 2.3 0 001-1.91v-.22a2.09 2.09 0 00-4.17 0z"/></symbol><symbol viewBox="0 0 12 13" id="settings" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 3.83H9.18a1.6 1.6 0 00-3.18 0H1.5v.67H6a1.6 1.6 0 003.15 0h1.35zM7.61 5.17a1 1 0 01-1-1 1 1 0 111.93 0 1 1 0 01-.93 1zm-6.11 4h1.32a1.63 1.63 0 001.57 1.33A1.64 1.64 0 006 9.17h4.5V8.5H6a1.63 1.63 0 00-1.61-1.33A1.62 1.62 0 002.82 8.5H1.5zm2.89-1.34a1 1 0 11-1 1 1 1 0 011-1z"/></symbol><symbol id="slider-arrow-left" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><defs><style>.ncls-1{fill-rule:evenodd}</style></defs><path class="ncls-1" d="M24.41 9.41l1.18 1.18L16.18 20l9.41 9.41-1.18 1.18L13.82 20z"/></symbol><symbol id="slider-arrow-right" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><defs><style>.ocls-1{fill-rule:evenodd}</style></defs><path class="ocls-1" d="M15.59 9.41l-1.18 1.18L23.82 20l-9.41 9.41 1.18 1.18L26.18 20z"/></symbol></svg>    </div>
+
+    <div class="page-content">
+          <header class="page-header">
+              <div class="container">
+                  <div class="page-header__row">
+                      <a href="#" class="page-header__account">
+                          <div class="page-header__account-photo-container">
+                              <img src="img/account-photo.jpg" alt="" class="page-header__account-photo">
+                          </div>
+                          <div class="page-header__account-name">
+                              Иванова Мария
+                          </div>
+                      </a>
+                      <button class="page-header__burger">
+                          <span></span>
+                          <span></span>
+                          <span></span>
+                      </button>
+                  </div>
+              </div>
+          </header>        <div class="layout">
+            <div class="layout__row">
+                <div class="layout__sidebar js-sticky-sidebar">
+                    <div class="sidebar">
+                        <div class="container">
+                            <div class="sidebar__inner">
+                                <a href="#" class="sidebar__logo">
+                                    <img src="img/logo.svg" alt="" class="sidebar__logo-image">
+                                </a>
+                                <div class="sidebar__account">
+                                    <a href="#" class="sidebar__account-photo-container">
+                                        <img src="img/account-photo.jpg" alt="" class="sidebar__account-photo">
+                                        <div class="sidebar__account-edit-icon">
+                                            <svg width="14" height="14" aria-hidden="true" class="icon-camera">
+                                                <use xlink:href="#camera"></use>
+                                            </svg>
+                                        </div>
+                                    </a>
+                                    <h3 class="sidebar__account-name">
+                                        Иванова Мария
+                                    </h3>
+                                    <a href="#" class="sidebar__account-change-btn">
+                                        Изменить данные
+                                    </a>
+                                    <div class="sidebar__account-balance">
+                                        <div class="sidebar__account-balance-amount">
+                                            5 000 ₽
+                                        </div>
+                                        <a href="#" class="sidebar__account-balance-add">
+                                            Пополнить
+                                            <svg width="14" height="14" aria-hidden="true" class="icon-add">
+                                                <use xlink:href="#add"></use>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                                <nav class="sidebar__nav">
+                                    <ul class="sidebar__nav-list">
+                                        <li class="sidebar__nav-list-item active">
+                                            <a href="#" class="sidebar__nav-link">
+                                                <svg width="14" height="14" aria-hidden="true" class="icon-home">
+                                                    <use xlink:href="#home"></use>
+                                                </svg>
+                                                Главная
+                                            </a>
+                                        </li>
+                                        <li class="sidebar__nav-list-item">
+                                            <a href="#" class="sidebar__nav-link">
+                                                <svg width="14" height="14" aria-hidden="true" class="icon-products">
+                                                    <use xlink:href="#products"></use>
+                                                </svg>
+                                                Мои продукты
+                                            </a>
+                                        </li>
+                                        <li class="sidebar__nav-list-item">
+                                            <a href="#" class="sidebar__nav-link">
+                                                <svg width="14" height="14" aria-hidden="true" class="icon-notifications">
+                                                    <use xlink:href="#notifications"></use>
+                                                </svg>
+                                                Уведомления
+                                                <span class="sidebar__nav-link-count">
+                                                    10
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li class="sidebar__nav-list-item">
+                                            <a href="#" class="sidebar__nav-link">
+                                                <svg width="14" height="14" aria-hidden="true" class="icon-payments">
+                                                    <use xlink:href="#payments"></use>
+                                                </svg>
+                                                Мои платежи
+                                            </a>
+                                        </li>
+                                        <li class="sidebar__nav-list-item">
+                                            <a href="#" class="sidebar__nav-link">
+                                                <svg width="14" height="14" aria-hidden="true" class="icon-catalog">
+                                                    <use xlink:href="#catalog"></use>
+                                                </svg>
+                                                Каталог продуктов
+                                            </a>
+                                        </li>
+                                        <li class="sidebar__nav-list-item">
+                                            <a href="#" class="sidebar__nav-link">
+                                                <svg width="14" height="14" aria-hidden="true" class="icon-interests">
+                                                    <use xlink:href="#interests"></use>
+                                                </svg>
+                                                Мои интересы
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                                <div class="sidebar__actions">
+                                    <a href="#" class="sidebar__nav-actions-btn">
+                                        <svg width="14" height="14" aria-hidden="true" class="icon-question">
+                                            <use xlink:href="#question"></use>
+                                        </svg>
+                                        FAQ
+                                    </a>
+                                    <a href="#" class="sidebar__nav-actions-btn">
+                                        <svg width="14" height="14" aria-hidden="true" class="icon-exit">
+                                            <use xlink:href="#exit"></use>
+                                        </svg>
+                                        Выйти
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                </div>
+                <div class="layout__main">
+
+
+
+<section class="events js-events">
+    <div class="container">
+
+
+        <h2 class="events__heading">
+            Календарь событий
+        </h2>
+        <div class="events__content">
+            <div class="events__calendar">
+                <button class="events__calendar-arrow events__calendar-arrow--prev">
+                    <svg width="14" height="14" aria-hidden="true" class="icon-slider-arrow-left">
+                        <use xlink:href="#slider-arrow-left"></use>
+                    </svg>
+                </button>
+                <div class="events__calendar-scroll-container">
+                    <div class="events__calendar-months">
+
+
+                        <div class="events__calendar-month">
+                            <span class="events__calendar-month-name">
+                                ФЕВРАЛЬ
+                            </span>
+                            <div class="events__calendar-days">
+                                <a href="#" class="events__calendar-card disabled">
+                                    <div class="events__calendar-card-day">
+                                        Чт
+                                    </div>
+                                    <div class="events__calendar-card-date">
+                                        17
+                                    </div>
+
+                                </a>
+                                <a href="#" class="events__calendar-card disabled">
+                                    <div class="events__calendar-card-day">
+                                        Пт
+                                    </div>
+                                    <div class="events__calendar-card-date">
+                                        18
+                                    </div>
+
+                                </a>
+                                <a href="#" class="events__calendar-card events__calendar-card--weekend active">
+                                    <div class="events__calendar-card-day">
+                                        Сб
+                                    </div>
+                                    <div class="events__calendar-card-date">
+                                        19
+                                    </div>
+                                    <div class="events__calendar-card-dots">
+                                        <div class="events__calendar-card-dot">
+
+                                        </div>
+                                        <div class="events__calendar-card-dot events__calendar-card-dot--blue">
+
+                                        </div>
+                                        <div class="events__calendar-card-dot events__calendar-card-dot--green">
+
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#" class="events__calendar-card events__calendar-card--weekend">
+                                    <div class="events__calendar-card-day">
+                                        ВС
+                                    </div>
+                                    <div class="events__calendar-card-date">
+                                        20
+                                    </div>
+                                    <div class="events__calendar-card-dots">
+                                        <div class="events__calendar-card-dot">
+
+                                        </div>
+                                        <div class="events__calendar-card-dot events__calendar-card-dot--green">
+
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#" class="events__calendar-card ">
+                                    <div class="events__calendar-card-day">
+                                        ПН
+                                    </div>
+                                    <div class="events__calendar-card-date">
+                                        21
+                                    </div>
+                                    <div class="events__calendar-card-dots">
+
+                                        <div class="events__calendar-card-dot events__calendar-card-dot--orange">
+
+                                        </div>
+                                        <div class="events__calendar-card-dot events__calendar-card-dot--blue">
+
+                                        </div>
+                                        <div class="events__calendar-card-dot events__calendar-card-dot--green">
+
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#" class="events__calendar-card ">
+                                    <div class="events__calendar-card-day">
+                                        Вт
+                                    </div>
+                                    <div class="events__calendar-card-date">
+                                        22
+                                    </div>
+                                    <div class="events__calendar-card-dots">
+
+                                        <div class="events__calendar-card-dot events__calendar-card-dot--orange">
+
+                                        </div>
+                                        <div class="events__calendar-card-dot events__calendar-card-dot--blue">
+
+                                        </div>
+                                        <div class="events__calendar-card-dot events__calendar-card-dot--green">
+
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#" class="events__calendar-card ">
+                                    <div class="events__calendar-card-day">
+                                        Ср
+                                    </div>
+                                    <div class="events__calendar-card-date">
+                                        23
+                                    </div>
+                                    <div class="events__calendar-card-dots">
+
+                                        <div class="events__calendar-card-dot events__calendar-card-dot--orange">
+
+                                        </div>
+                                        <div class="events__calendar-card-dot events__calendar-card-dot--blue">
+
+                                        </div>
+                                        <div class="events__calendar-card-dot events__calendar-card-dot--green">
+
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#" class="events__calendar-card ">
+                                    <div class="events__calendar-card-day">
+                                        Чт
+                                    </div>
+                                    <div class="events__calendar-card-date">
+                                        24
+                                    </div>
+                                    <div class="events__calendar-card-dots">
+
+                                        <div class="events__calendar-card-dot events__calendar-card-dot--orange">
+
+                                        </div>
+                                        <div class="events__calendar-card-dot events__calendar-card-dot--blue">
+
+                                        </div>
+                                        <div class="events__calendar-card-dot events__calendar-card-dot--green">
+
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#" class="events__calendar-card ">
+                                    <div class="events__calendar-card-day">
+                                        Пт
+                                    </div>
+                                    <div class="events__calendar-card-date">
+                                        25
+                                    </div>
+                                    <div class="events__calendar-card-dots">
+
+                                        <div class="events__calendar-card-dot events__calendar-card-dot--orange">
+
+                                        </div>
+                                        <div class="events__calendar-card-dot events__calendar-card-dot--blue">
+
+                                        </div>
+                                        <div class="events__calendar-card-dot events__calendar-card-dot--green">
+
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#" class="events__calendar-card events__calendar-card--weekend">
+                                    <div class="events__calendar-card-day">
+                                        Сб
+                                    </div>
+                                    <div class="events__calendar-card-date">
+                                        26
+                                    </div>
+                                    <div class="events__calendar-card-dots">
+
+                                        <div class="events__calendar-card-dot">
+
+                                        </div>
+                                        <div class="events__calendar-card-dot events__calendar-card-dot--red">
+
+                                        </div>
+                                        <div class="events__calendar-card-dot events__calendar-card-dot--green">
+
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#" class="events__calendar-card events__calendar-card--weekend">
+                                    <div class="events__calendar-card-day">
+                                        ВС
+                                    </div>
+                                    <div class="events__calendar-card-date">
+                                        27
+                                    </div>
+                                    <div class="events__calendar-card-dots">
+                                        <div class="events__calendar-card-dot">
+
+                                        </div>
+                                        <div class="events__calendar-card-dot events__calendar-card-dot--blue">
+
+                                        </div>
+                                        <div class="events__calendar-card-dot events__calendar-card-dot--green">
+
+                                        </div>
+
+                                    </div>
+                                </a>
+                                <a href="#" class="events__calendar-card ">
+                                    <div class="events__calendar-card-day">
+                                        ПН
+                                    </div>
+                                    <div class="events__calendar-card-date">
+                                        28
+                                    </div>
+                                    <div class="events__calendar-card-dots">
+
+                                        <div class="events__calendar-card-dot">
+
+                                        </div>
+                                        <div class="events__calendar-card-dot events__calendar-card-dot--green">
+
+                                        </div>
+
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="events__calendar-month">
+                            <span class="events__calendar-month-name">
+                                МАРТ
+                            </span>
+                            <div class="events__calendar-days">
+                                <a href="#" class="events__calendar-card">
+                                    <div class="events__calendar-card-day">
+                                        Вт
+                                    </div>
+                                    <div class="events__calendar-card-date">
+                                        1
+                                    </div>
+                                    <div class="events__calendar-card-dots">
+                                        <div class="events__calendar-card-dot events__calendar-card-dot--orange">
+
+                                        </div>
+                                        <div class="events__calendar-card-dot events__calendar-card-dot--green">
+
+                                        </div>
+                                        <div class="events__calendar-card-dot events__calendar-card-dot--blue">
+
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#" class="events__calendar-card">
+                                    <div class="events__calendar-card-day">
+                                        Ср
+                                    </div>
+                                    <div class="events__calendar-card-date">
+                                        2
+                                    </div>
+                                    <div class="events__calendar-card-dots">
+                                        <div class="events__calendar-card-dot events__calendar-card-dot--orange">
+
+                                        </div>
+                                        <div class="events__calendar-card-dot events__calendar-card-dot--green">
+
+                                        </div>
+                                        <div class="events__calendar-card-dot events__calendar-card-dot--blue">
+
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#" class="events__calendar-card">
+                                    <div class="events__calendar-card-day">
+                                        Чт
+                                    </div>
+                                    <div class="events__calendar-card-date">
+                                        3
+                                    </div>
+                                    <div class="events__calendar-card-dots">
+                                        <div class="events__calendar-card-dot">
+
+                                        </div>
+
+                                        <div class="events__calendar-card-dot events__calendar-card-dot--green">
+
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#" class="events__calendar-card">
+                                    <div class="events__calendar-card-day">
+                                        Пт
+                                    </div>
+                                    <div class="events__calendar-card-date">
+                                        4
+                                    </div>
+                                    <div class="events__calendar-card-dots">
+
+
+                                        <div class="events__calendar-card-dot events__calendar-card-dot--orange">
+
+                                        </div>
+                                        <div class="events__calendar-card-dot events__calendar-card-dot--blue">
+
+                                        </div>
+                                        <div class="events__calendar-card-dot events__calendar-card-dot--green">
+
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#" class="events__calendar-card events__calendar-card--weekend">
+                                    <div class="events__calendar-card-day">
+                                        Сб
+                                    </div>
+                                    <div class="events__calendar-card-date">
+                                        5
+                                    </div>
+                                    <div class="events__calendar-card-dots">
+
+
+                                        <div class="events__calendar-card-dot events__calendar-card-dot--orange">
+
+                                        </div>
+                                        <div class="events__calendar-card-dot events__calendar-card-dot--blue">
+
+                                        </div>
+                                        <div class="events__calendar-card-dot events__calendar-card-dot--green">
+
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#" class="events__calendar-card events__calendar-card--weekend">
+                                    <div class="events__calendar-card-day">
+                                        ВС
+                                    </div>
+                                    <div class="events__calendar-card-date">
+                                        6
+                                    </div>
+                                    <div class="events__calendar-card-dots">
+
+
+                                        <div class="events__calendar-card-dot events__calendar-card-dot--orange">
+
+                                        </div>
+                                        <div class="events__calendar-card-dot events__calendar-card-dot--blue">
+
+                                        </div>
+                                        <div class="events__calendar-card-dot events__calendar-card-dot--green">
+
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#" class="events__calendar-card">
+                                    <div class="events__calendar-card-day">
+                                        ПН
+                                    </div>
+                                    <div class="events__calendar-card-date">
+                                        7
+                                    </div>
+                                    <div class="events__calendar-card-dots">
+
+
+                                        <div class="events__calendar-card-dot">
+
+                                        </div>
+
+                                        <div class="events__calendar-card-dot events__calendar-card-dot--green">
+
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#" class="events__calendar-card">
+                                    <div class="events__calendar-card-day">
+                                        Вт
+                                    </div>
+                                    <div class="events__calendar-card-date">
+                                        8
+                                    </div>
+                                    <div class="events__calendar-card-dots">
+                                        <div class="events__calendar-card-dot events__calendar-card-dot--orange">
+
+                                        </div>
+                                        <div class="events__calendar-card-dot events__calendar-card-dot--blue">
+
+                                        </div>
+                                        <div class="events__calendar-card-dot events__calendar-card-dot--green">
+
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#" class="events__calendar-card">
+                                    <div class="events__calendar-card-day">
+                                        Ср
+                                    </div>
+                                    <div class="events__calendar-card-date">
+                                        9
+                                    </div>
+                                    <div class="events__calendar-card-dots">
+                                        <div class="events__calendar-card-dot events__calendar-card-dot--orange">
+
+                                        </div>
+                                        <div class="events__calendar-card-dot events__calendar-card-dot--blue">
+
+                                        </div>
+                                        <div class="events__calendar-card-dot events__calendar-card-dot--green">
+
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#" class="events__calendar-card">
+                                    <div class="events__calendar-card-day">
+                                        Чт
+                                    </div>
+                                    <div class="events__calendar-card-date">
+                                        10
+                                    </div>
+                                    <div class="events__calendar-card-dots">
+                                        <div class="events__calendar-card-dot events__calendar-card-dot--orange">
+
+                                        </div>
+                                        <div class="events__calendar-card-dot events__calendar-card-dot--blue">
+
+                                        </div>
+                                        <div class="events__calendar-card-dot events__calendar-card-dot--green">
+
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#" class="events__calendar-card">
+                                    <div class="events__calendar-card-day">
+                                        Пт
+                                    </div>
+                                    <div class="events__calendar-card-date">
+                                        11
+                                    </div>
+                                    <div class="events__calendar-card-dots">
+                                        <div class="events__calendar-card-dot events__calendar-card-dot--orange">
+
+                                        </div>
+                                        <div class="events__calendar-card-dot events__calendar-card-dot--blue">
+
+                                        </div>
+                                        <div class="events__calendar-card-dot events__calendar-card-dot--green">
+
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#" class="events__calendar-card events__calendar-card--weekend">
+                                    <div class="events__calendar-card-day">
+                                        Сб
+                                    </div>
+                                    <div class="events__calendar-card-date">
+                                        12
+                                    </div>
+                                    <div class="events__calendar-card-dots">
+                                        <div class="events__calendar-card-dot events__calendar-card-dot--orange">
+
+                                        </div>
+                                        <div class="events__calendar-card-dot events__calendar-card-dot--blue">
+
+                                        </div>
+                                        <div class="events__calendar-card-dot events__calendar-card-dot--green">
+
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#" class="events__calendar-card events__calendar-card--weekend">
+                                    <div class="events__calendar-card-day">
+                                        Вс
+                                    </div>
+                                    <div class="events__calendar-card-date">
+                                        13
+                                    </div>
+                                    <div class="events__calendar-card-dots">
+                                        <div class="events__calendar-card-dot events__calendar-card-dot--orange">
+
+                                        </div>
+                                        <div class="events__calendar-card-dot events__calendar-card-dot--blue">
+
+                                        </div>
+                                        <div class="events__calendar-card-dot events__calendar-card-dot--green">
+
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#" class="events__calendar-card">
+                                    <div class="events__calendar-card-day">
+                                        Пн
+                                    </div>
+                                    <div class="events__calendar-card-date">
+                                        14
+                                    </div>
+                                    <div class="events__calendar-card-dots">
+                                        <div class="events__calendar-card-dot events__calendar-card-dot--orange">
+
+                                        </div>
+                                        <div class="events__calendar-card-dot events__calendar-card-dot--blue">
+
+                                        </div>
+                                        <div class="events__calendar-card-dot events__calendar-card-dot--green">
+
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#" class="events__calendar-card">
+                                    <div class="events__calendar-card-day">
+                                        Вт
+                                    </div>
+                                    <div class="events__calendar-card-date">
+                                        15
+                                    </div>
+                                    <div class="events__calendar-card-dots">
+                                        <div class="events__calendar-card-dot events__calendar-card-dot--orange">
+
+                                        </div>
+                                        <div class="events__calendar-card-dot events__calendar-card-dot--blue">
+
+                                        </div>
+                                        <div class="events__calendar-card-dot events__calendar-card-dot--green">
+
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#" class="events__calendar-card">
+                                    <div class="events__calendar-card-day">
+                                        Ср
+                                    </div>
+                                    <div class="events__calendar-card-date">
+                                        16
+                                    </div>
+                                    <div class="events__calendar-card-dots">
+                                        <div class="events__calendar-card-dot events__calendar-card-dot--orange">
+
+                                        </div>
+                                        <div class="events__calendar-card-dot events__calendar-card-dot--blue">
+
+                                        </div>
+                                        <div class="events__calendar-card-dot events__calendar-card-dot--green">
+
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#" class="events__calendar-card">
+                                    <div class="events__calendar-card-day">
+                                        Чт
+                                    </div>
+                                    <div class="events__calendar-card-date">
+                                        17
+                                    </div>
+                                    <div class="events__calendar-card-dots">
+                                        <div class="events__calendar-card-dot events__calendar-card-dot--orange">
+
+                                        </div>
+                                        <div class="events__calendar-card-dot events__calendar-card-dot--blue">
+
+                                        </div>
+                                        <div class="events__calendar-card-dot events__calendar-card-dot--green">
+
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#" class="events__calendar-card">
+                                    <div class="events__calendar-card-day">
+                                        Пт
+                                    </div>
+                                    <div class="events__calendar-card-date">
+                                        18
+                                    </div>
+                                    <div class="events__calendar-card-dots">
+                                        <div class="events__calendar-card-dot events__calendar-card-dot--orange">
+
+                                        </div>
+                                        <div class="events__calendar-card-dot events__calendar-card-dot--blue">
+
+                                        </div>
+                                        <div class="events__calendar-card-dot events__calendar-card-dot--green">
+
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#" class="events__calendar-card events__calendar-card--weekend">
+                                    <div class="events__calendar-card-day">
+                                        Сб
+                                    </div>
+                                    <div class="events__calendar-card-date">
+                                        19
+                                    </div>
+                                    <div class="events__calendar-card-dots">
+                                        <div class="events__calendar-card-dot events__calendar-card-dot--orange">
+
+                                        </div>
+                                        <div class="events__calendar-card-dot events__calendar-card-dot--blue">
+
+                                        </div>
+                                        <div class="events__calendar-card-dot events__calendar-card-dot--green">
+
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#" class="events__calendar-card events__calendar-card--weekend">
+                                    <div class="events__calendar-card-day">
+                                        Вс
+                                    </div>
+                                    <div class="events__calendar-card-date">
+                                        20
+                                    </div>
+                                    <div class="events__calendar-card-dots">
+                                        <div class="events__calendar-card-dot events__calendar-card-dot--orange">
+
+                                        </div>
+                                        <div class="events__calendar-card-dot events__calendar-card-dot--blue">
+
+                                        </div>
+                                        <div class="events__calendar-card-dot events__calendar-card-dot--green">
+
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#" class="events__calendar-card">
+                                    <div class="events__calendar-card-day">
+                                        Пн
+                                    </div>
+                                    <div class="events__calendar-card-date">
+                                        21
+                                    </div>
+                                    <div class="events__calendar-card-dots">
+                                        <div class="events__calendar-card-dot events__calendar-card-dot--orange">
+
+                                        </div>
+                                        <div class="events__calendar-card-dot events__calendar-card-dot--blue">
+
+                                        </div>
+                                        <div class="events__calendar-card-dot events__calendar-card-dot--green">
+
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#" class="events__calendar-card">
+                                    <div class="events__calendar-card-day">
+                                        Вт
+                                    </div>
+                                    <div class="events__calendar-card-date">
+                                        22
+                                    </div>
+                                    <div class="events__calendar-card-dots">
+                                        <div class="events__calendar-card-dot events__calendar-card-dot--orange">
+
+                                        </div>
+                                        <div class="events__calendar-card-dot events__calendar-card-dot--blue">
+
+                                        </div>
+                                        <div class="events__calendar-card-dot events__calendar-card-dot--green">
+
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#" class="events__calendar-card">
+                                    <div class="events__calendar-card-day">
+                                        Ср
+                                    </div>
+                                    <div class="events__calendar-card-date">
+                                        23
+                                    </div>
+                                    <div class="events__calendar-card-dots">
+                                        <div class="events__calendar-card-dot events__calendar-card-dot--orange">
+
+                                        </div>
+                                        <div class="events__calendar-card-dot events__calendar-card-dot--blue">
+
+                                        </div>
+                                        <div class="events__calendar-card-dot events__calendar-card-dot--green">
+
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#" class="events__calendar-card">
+                                    <div class="events__calendar-card-day">
+                                        Чт
+                                    </div>
+                                    <div class="events__calendar-card-date">
+                                        24
+                                    </div>
+                                    <div class="events__calendar-card-dots">
+                                        <div class="events__calendar-card-dot events__calendar-card-dot--orange">
+
+                                        </div>
+                                        <div class="events__calendar-card-dot events__calendar-card-dot--blue">
+
+                                        </div>
+                                        <div class="events__calendar-card-dot events__calendar-card-dot--green">
+
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#" class="events__calendar-card">
+                                    <div class="events__calendar-card-day">
+                                        Пт
+                                    </div>
+                                    <div class="events__calendar-card-date">
+                                        25
+                                    </div>
+                                    <div class="events__calendar-card-dots">
+                                        <div class="events__calendar-card-dot events__calendar-card-dot--orange">
+
+                                        </div>
+                                        <div class="events__calendar-card-dot events__calendar-card-dot--blue">
+
+                                        </div>
+                                        <div class="events__calendar-card-dot events__calendar-card-dot--green">
+
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#" class="events__calendar-card events__calendar-card--weekend">
+                                    <div class="events__calendar-card-day">
+                                        Сб
+                                    </div>
+                                    <div class="events__calendar-card-date">
+                                        26
+                                    </div>
+                                    <div class="events__calendar-card-dots">
+                                        <div class="events__calendar-card-dot events__calendar-card-dot--orange">
+
+                                        </div>
+                                        <div class="events__calendar-card-dot events__calendar-card-dot--blue">
+
+                                        </div>
+                                        <div class="events__calendar-card-dot events__calendar-card-dot--green">
+
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#" class="events__calendar-card events__calendar-card--weekend">
+                                    <div class="events__calendar-card-day">
+                                        Вс
+                                    </div>
+                                    <div class="events__calendar-card-date">
+                                        27
+                                    </div>
+                                    <div class="events__calendar-card-dots">
+                                        <div class="events__calendar-card-dot events__calendar-card-dot--orange">
+
+                                        </div>
+                                        <div class="events__calendar-card-dot events__calendar-card-dot--blue">
+
+                                        </div>
+                                        <div class="events__calendar-card-dot events__calendar-card-dot--green">
+
+                                        </div>
+                                    </div>
+                                </a>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <button class="events__calendar-arrow events__calendar-arrow--next">
+                    <svg width="14" height="14" aria-hidden="true" class="icon-slider-arrow-right">
+                        <use xlink:href="#slider-arrow-right"></use>
+                    </svg>
+                </button>
+            </div>
+            <div class="events__results">
+                <ul class="events__list">
+                    <li class="events__list-item">
+                        <a href="#" class="events__card">
+                            <div class="events__card-photo-container">
+                                <img src="img/events/1.jpg" alt="" class="events__card-photo">
+                            </div>
+                            <div class="events__card-content">
+                                <h4 class="events__card-title">
+                                    Правила весеннего питания
+                                </h4>
+                                <div class="events__card-tags">
+                                    <div class="events__card-tag events__card-tag--orange">
+                                        Лекция
+                                    </div>
+                                    <div class="events__card-tag">
+                                        14:00
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="events__list-item">
+                        <a href="#" class="events__card">
+                            <div class="events__card-photo-container">
+                                <img src="img/events/2.jpg" alt="" class="events__card-photo">
+                            </div>
+                            <div class="events__card-content">
+                                <h4 class="events__card-title">
+                                    Домашний нутрициолог
+                                </h4>
+                                <div class="events__card-tags">
+                                    <div class="events__card-tag events__card-tag--green">
+                                        Курс
+                                    </div>
+                                    <div class="events__card-tag">
+                                        14:00
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="events__list-item">
+                        <a href="#" class="events__card">
+                            <div class="events__card-photo-container">
+                                <img src="img/events/3.jpg" alt="" class="events__card-photo">
+                            </div>
+                            <div class="events__card-content">
+                                <h4 class="events__card-title">
+                                    Онлайн-встреча для начинающих нутрициологов
+                                </h4>
+                                <div class="events__card-tags">
+                                    <div class="events__card-tag events__card-tag--orange">
+                                        Лекция
+                                    </div>
+                                    <div class="events__card-tag">
+                                        14:00
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="recomedations">
+    <div class="container">
+
+
+        <div class="recomendations__top-row">
+            <h2 class="recomendations__heading">
+                Рекомендации для вас
+            </h2>
+            <a href="#" class="recomendations__settings">
+                <span class="recomendations__settings-text">
+                    Настроить интересы
+                </span>
+
+                <svg width="14" height="14" aria-hidden="true" class="icon-settings">
+                    <use xlink:href="#settings"></use>
+                </svg>
+            </a>
+        </div>
+
+        <div class="recomendations__content">
+            <ul class="recomendations__list">
+                <li class="recomendations__list-item recomendations__list-item--wide">
+                    <a href="#"
+                        class="recomendations__card recomendations__card--aligned-top recomendations__card--large">
+                        <div class="recomendations__card-bg">
+                        
+                            <picture>
+                                <source srcset="img/recomedations/1-mobile.svg" media="(max-width: 640px)">
+                                <img src="img/recomedations/1.svg" alt="" class="recomendations__card-bg-image">
+                            </picture>
+                        </div>
+                        <h4 class="recomendations__card-title recomendations__card-title--large">
+                            Укажите ваши интересы
+                        </h4>
+                        <div class="recomendations__card-text recomendations__card-text--large">
+                            Указав свои интересы, мы сможем рекомендовать вам наиболее персональные продукты
+                        </div>
+                        <div class="recomendations__card-bottom-row">
+                            <div class="recomendations__card-action">
+                                Перейти в настройки
+                                <svg width="14" height="14" aria-hidden="true" class="icon-camera">
+                                    <use xlink:href="#arrow-right"></use>
+                                </svg>
+                            </div>
+                        </div>
+
+                    </a>
+                </li>
+                <li class="recomendations__list-item">
+                    <a href="#" class="recomendations__card">
+                        <div class="recomendations__card-bg">
+                            <img src="img/recomedations/2.jpg" alt="" class="recomendations__card-bg-image">
+                        </div>
+                        <div class="recomendations__card-tags">
+                            <div class="recomendations__card-tag">
+                                4 декабря
+                            </div>
+                            <div class="recomendations__card-tag">
+                                19:00
+                            </div>
+                        </div>
+                        <h4 class="recomendations__card-title">
+                            Онлайн-встреча для начинающих нутрициологов
+                        </h4>
+                        <div class="recomendations__card-text ">
+                            Краткое описание в две строки<br> о пользе продукта
+                        </div>
+                        <div class="recomendations__card-bottom-row">
+                            <div class="recomendations__card-action">
+                                Подробнее
+                                <svg width="14" height="14" aria-hidden="true" class="icon-camera">
+                                    <use xlink:href="#arrow-right"></use>
+                                </svg>
+                            </div>
+                            <div class="recomendations__card-prices">
+                                <div class="recomendations__card-old-price">
+                                    500 ₽
+                                </div>
+                                <div class="recomendations__card-new-price">
+                                    250 ₽
+                                </div>
+                            </div>
+                        </div>
+
+                    </a>
+                </li>
+                <li class="recomendations__list-item">
+                    <a href="#" class="recomendations__card">
+                        <div class="recomendations__card-bg">
+                            <img src="img/recomedations/3.jpg" alt="" class="recomendations__card-bg-image">
+                        </div>
+                        <div class="recomendations__card-tags">
+                            <div class="recomendations__card-tag">
+                                4 декабря
+                            </div>
+                            <div class="recomendations__card-tag">
+                                19:00
+                            </div>
+                        </div>
+                        <h4 class="recomendations__card-title">
+                            Домашние<br> процедуры<br> оздоровления
+                        </h4>
+
+                        <div class="recomendations__card-bottom-row">
+                            <div class="recomendations__card-action">
+                                Подробнее
+                                <svg width="14" height="14" aria-hidden="true" class="icon-camera">
+                                    <use xlink:href="#arrow-right"></use>
+                                </svg>
+                            </div>
+                            <div class="recomendations__card-prices">
+                                <div class="recomendations__card-old-price">
+                                    500 ₽
+                                </div>
+                                <div class="recomendations__card-new-price">
+                                    250 ₽
+                                </div>
+                            </div>
+                        </div>
+
+                    </a>
+                </li>
+                <li class="recomendations__list-item">
+                    <a href="#" class="recomendations__card">
+                        <div class="recomendations__card-bg">
+                            <img src="img/recomedations/4.jpg" alt="" class="recomendations__card-bg-image">
+                        </div>
+                        <div class="recomendations__card-tags">
+                            <div class="recomendations__card-tag">
+                                4 декабря
+                            </div>
+                            <div class="recomendations__card-tag">
+                                19:00
+                            </div>
+                        </div>
+                        <h4 class="recomendations__card-title">
+                            Азбука детского<br> питания от 0 до 2 лет
+                        </h4>
+
+                        <div class="recomendations__card-bottom-row">
+                            <div class="recomendations__card-action">
+                                Подробнее
+                                <svg width="14" height="14" aria-hidden="true" class="icon-camera">
+                                    <use xlink:href="#arrow-right"></use>
+                                </svg>
+                            </div>
+                            <div class="recomendations__card-prices">
+                                <div class="recomendations__card-old-price">
+                                    500 ₽
+                                </div>
+                                <div class="recomendations__card-new-price">
+                                    250 ₽
+                                </div>
+                            </div>
+                        </div>
+
+                    </a>
+                </li>
+                <li class="recomendations__list-item">
+                    <a href="#" class="recomendations__card">
+                        <div class="recomendations__card-bg">
+                            <img src="img/recomedations/5.jpg" alt="" class="recomendations__card-bg-image">
+                        </div>
+                        <div class="recomendations__card-tags">
+                            <div class="recomendations__card-tag">
+                                4 декабря
+                            </div>
+                            <div class="recomendations__card-tag">
+                                19:00
+                            </div>
+                        </div>
+                        <h4 class="recomendations__card-title">
+                            Здоровье желудка
+                        </h4>
+
+                        <div class="recomendations__card-bottom-row">
+                            <div class="recomendations__card-action">
+                                Подробнее
+                                <svg width="14" height="14" aria-hidden="true" class="icon-camera">
+                                    <use xlink:href="#arrow-right"></use>
+                                </svg>
+                            </div>
+                            <div class="recomendations__card-prices">
+                                <div class="recomendations__card-old-price">
+                                    500 ₽
+                                </div>
+                                <div class="recomendations__card-new-price">
+                                    250 ₽
+                                </div>
+                            </div>
+                        </div>
+
+                    </a>
+                </li>
+                <li class="recomendations__list-item">
+                    <a href="#" class="recomendations__card">
+                        <div class="recomendations__card-bg">
+                            <img src="img/recomedations/6.jpg" alt="" class="recomendations__card-bg-image">
+                        </div>
+                        <div class="recomendations__card-tags">
+                            <div class="recomendations__card-tag">
+                                25 февраля
+                            </div>
+                        </div>
+                        <div class="recomendations__card-category">
+                            Курс • 3 месяца
+                        </div>
+                        <h4 class="recomendations__card-title">
+                            Домашний<br> нутриициотлог
+                        </h4>
+
+                        <div class="recomendations__card-bottom-row">
+                            <div class="recomendations__card-action">
+                                Подробнее
+                                <svg width="14" height="14" aria-hidden="true" class="icon-camera">
+                                    <use xlink:href="#arrow-right"></use>
+                                </svg>
+                            </div>
+                            <div class="recomendations__card-prices">
+
+                                <div class="recomendations__card-new-price">
+                                    от 7 999 ₽
+                                </div>
+                            </div>
+                        </div>
+
+                    </a>
+                </li>
+                <li class="recomendations__list-item recomendations__list-item--narrow">
+                    <a href="#" class="recomendations__card recomendations__card--small">
+                        <div class="recomendations__card-bg">
+                            <img src="img/recomedations/7.jpg" alt="" class="recomendations__card-bg-image">
+                        </div>
+                        <div class="recomendations__card-tags">
+                            <div class="recomendations__card-tag">
+                                25 февраля
+                            </div>
+
+                        </div>
+                        <div class="recomendations__card-category">
+                            Мастер-класс
+                        </div>
+                        <h4 class="recomendations__card-title">
+                            Здоровые волосы
+                        </h4>
+
+                        <div class="recomendations__card-bottom-row">
+                            <div class="recomendations__card-action">
+                                Подробнее
+                                <svg width="14" height="14" aria-hidden="true" class="icon-camera">
+                                    <use xlink:href="#arrow-right"></use>
+                                </svg>
+                            </div>
+                            <div class="recomendations__card-prices">
+
+                                <div class="recomendations__card-new-price">
+                                    999 ₽
+                                </div>
+                            </div>
+                        </div>
+
+                    </a>
+                </li>
+                <li class="recomendations__list-item recomendations__list-item--narrow">
+                    <a href="#" class="recomendations__card recomendations__card--small">
+                        <div class="recomendations__card-bg">
+                            <img src="img/recomedations/8.jpg" alt="" class="recomendations__card-bg-image">
+                        </div>
+                        <div class="recomendations__card-tags">
+                            <div class="recomendations__card-tag">
+                                25 февраля
+                            </div>
+
+                        </div>
+                        <div class="recomendations__card-category">
+                            Курс • 3 месяца
+                        </div>
+                        <h4 class="recomendations__card-title">
+                            Здоровье желудка
+                        </h4>
+
+                        <div class="recomendations__card-bottom-row">
+                            <div class="recomendations__card-action">
+                                Подробнее
+                                <svg width="14" height="14" aria-hidden="true" class="icon-camera">
+                                    <use xlink:href="#arrow-right"></use>
+                                </svg>
+                            </div>
+                            <div class="recomendations__card-prices">
+                                <div class="recomendations__card-old-price">
+                                    1500 ₽
+                                </div>
+                                <div class="recomendations__card-new-price">
+                                    999 ₽
+                                </div>
+                            </div>
+                        </div>
+
+                    </a>
+                </li>
+                <li class="recomendations__list-item recomendations__list-item--short">
+                    <a href="#" class="recomendations__card recomendations__card--small">
+                        <div class="recomendations__card-bg">
+                            <img src="img/recomedations/9.svg" alt="" class="recomendations__card-bg-image">
+                        </div>
+                        <div class="recomendations__card-tags">
+                            <div class="recomendations__card-tag">
+                                Гайд
+                            </div>
+
+                        </div>
+
+                        <h4 class="recomendations__card-title">
+                            Календарь полезных привычек на 2022 год
+                            <img src="img/download.svg" alt="" class="recomendations__card-download-icon">
+                        </h4>
+
+
+                    </a>
+                </li>
+                <li class="recomendations__list-item recomendations__list-item--short">
+                    <a href="#" class="recomendations__card recomendations__card--small">
+                        <div class="recomendations__card-bg">
+                            <img src="img/recomedations/10.svg" alt="" class="recomendations__card-bg-image">
+                        </div>
+
+
+                        <h4 class="recomendations__card-title">
+                            Подписывайся на наш
+                            Telegram-канал
+                            <img src="img/telegram.svg" alt="" class="recomendations__card-teleram-icon">
+                        </h4>
+
+
+                    </a>
+                </li>
+                <li class="recomendations__list-item">
+                    <a href="#" class="recomendations__card">
+                        <div class="recomendations__card-bg">
+                            <img src="img/recomedations/3.jpg" alt="" class="recomendations__card-bg-image">
+                        </div>
+                        <div class="recomendations__card-tags">
+                            <div class="recomendations__card-tag">
+                                4 декабря
+                            </div>
+                            <div class="recomendations__card-tag">
+                                19:00
+                            </div>
+                        </div>
+                        <h4 class="recomendations__card-title">
+                            Домашние<br> процедуры<br> оздоровления
+                        </h4>
+
+                        <div class="recomendations__card-bottom-row">
+                            <div class="recomendations__card-action">
+                                Подробнее
+                                <svg width="14" height="14" aria-hidden="true" class="icon-camera">
+                                    <use xlink:href="#arrow-right"></use>
+                                </svg>
+                            </div>
+                            <div class="recomendations__card-prices">
+                                <div class="recomendations__card-old-price">
+                                    500 ₽
+                                </div>
+                                <div class="recomendations__card-new-price">
+                                    250 ₽
+                                </div>
+                            </div>
+                        </div>
+
+                    </a>
+                </li>
+                <li class="recomendations__list-item">
+                    <a href="#" class="recomendations__card">
+                        <div class="recomendations__card-bg">
+                            <img src="img/recomedations/4.jpg" alt="" class="recomendations__card-bg-image">
+                        </div>
+                        <div class="recomendations__card-tags">
+                            <div class="recomendations__card-tag">
+                                4 декабря
+                            </div>
+                            <div class="recomendations__card-tag">
+                                19:00
+                            </div>
+                        </div>
+                        <h4 class="recomendations__card-title">
+                            Азбука детского<br> питания от 0 до 2 лет
+                        </h4>
+
+                        <div class="recomendations__card-bottom-row">
+                            <div class="recomendations__card-action">
+                                Подробнее
+                                <svg width="14" height="14" aria-hidden="true" class="icon-camera">
+                                    <use xlink:href="#arrow-right"></use>
+                                </svg>
+                            </div>
+                            <div class="recomendations__card-prices">
+                                <div class="recomendations__card-old-price">
+                                    500 ₽
+                                </div>
+                                <div class="recomendations__card-new-price">
+                                    250 ₽
+                                </div>
+                            </div>
+                        </div>
+
+                    </a>
+                </li>
+                <li class="recomendations__list-item">
+                    <a href="#" class="recomendations__card">
+                        <div class="recomendations__card-bg">
+                            <img src="img/recomedations/5.jpg" alt="" class="recomendations__card-bg-image">
+                        </div>
+                        <div class="recomendations__card-tags">
+                            <div class="recomendations__card-tag">
+                                4 декабря
+                            </div>
+                            <div class="recomendations__card-tag">
+                                19:00
+                            </div>
+                        </div>
+                        <h4 class="recomendations__card-title">
+                            Здоровье желудка
+                        </h4>
+
+                        <div class="recomendations__card-bottom-row">
+                            <div class="recomendations__card-action">
+                                Подробнее
+                                <svg width="14" height="14" aria-hidden="true" class="icon-camera">
+                                    <use xlink:href="#arrow-right"></use>
+                                </svg>
+                            </div>
+                            <div class="recomendations__card-prices">
+                                <div class="recomendations__card-old-price">
+                                    500 ₽
+                                </div>
+                                <div class="recomendations__card-new-price">
+                                    250 ₽
+                                </div>
+                            </div>
+                        </div>
+
+                    </a>
+                </li>
+                <li class="recomendations__list-item">
+                    <a href="#" class="recomendations__card">
+                        <div class="recomendations__card-bg">
+                            <img src="img/recomedations/11.jpg" alt="" class="recomendations__card-bg-image">
+                        </div>
+
+                        <h4 class="recomendations__card-title">
+                            Подарочный сертификат
+
+                            <div class="recomendations__card-prices">
+                                <div class="recomendations__card-old-price">
+                                    500 ₽
+                                </div>
+                                <div class="recomendations__card-new-price">
+                                    250 ₽
+                                </div>
+                            </div>
+                        </h4>
+
+
+
+                    </a>
+                </li>
+                <li class="recomendations__list-item">
+                    <a href="#" class="recomendations__card">
+                        <div class="recomendations__card-bg">
+                            <img src="img/recomedations/6.jpg" alt="" class="recomendations__card-bg-image">
+                        </div>
+                        <div class="recomendations__card-tags">
+                            <div class="recomendations__card-tag">
+                                25 февраля
+                            </div>
+                        </div>
+                        <div class="recomendations__card-category">
+                            Курс • 3 месяца
+                        </div>
+                        <h4 class="recomendations__card-title">
+                            Домашний<br> нутриициотлог
+                        </h4>
+
+                        <div class="recomendations__card-bottom-row">
+                            <div class="recomendations__card-action">
+                                Подробнее
+                                <svg width="14" height="14" aria-hidden="true" class="icon-camera">
+                                    <use xlink:href="#arrow-right"></use>
+                                </svg>
+                            </div>
+                            <div class="recomendations__card-prices">
+
+                                <div class="recomendations__card-new-price">
+                                    от 7 999 ₽
+                                </div>
+                            </div>
+                        </div>
+
+                    </a>
+                </li>
+                <li class="recomendations__list-item">
+                    <a href="#" class="recomendations__card">
+                        <div class="recomendations__card-bg">
+                            <img src="img/recomedations/12.jpg" alt="" class="recomendations__card-bg-image">
+                        </div>
+
+
+                        <h4 class="recomendations__card-title">
+
+                            Экспресс<br> консультация
+                        </h4>
+
+                        <div class="recomendations__card-bottom-row">
+                            <div class="recomendations__card-action">
+                                Подробнее
+                                <svg width="14" height="14" aria-hidden="true" class="icon-camera">
+                                    <use xlink:href="#arrow-right"></use>
+                                </svg>
+                            </div>
+                            <div class="recomendations__card-prices">
+
+                                <div class="recomendations__card-new-price">
+                                    от 4 999 ₽
+                                </div>
+                            </div>
+                        </div>
+
+                    </a>
+                </li>
+                <li class="recomendations__list-item">
+                    <a href="#" class="recomendations__card">
+                        <div class="recomendations__card-bg">
+                            <img src="img/recomedations/4.jpg" alt="" class="recomendations__card-bg-image">
+                        </div>
+                        <div class="recomendations__card-tags">
+                            <div class="recomendations__card-tag">
+                                4 декабря
+                            </div>
+                            <div class="recomendations__card-tag">
+                                19:00
+                            </div>
+                        </div>
+                        <h4 class="recomendations__card-title">
+                            Азбука детского<br> питания от 0 до 2 лет
+                        </h4>
+
+                        <div class="recomendations__card-bottom-row">
+                            <div class="recomendations__card-action">
+                                Подробнее
+                                <svg width="14" height="14" aria-hidden="true" class="icon-camera">
+                                    <use xlink:href="#arrow-right"></use>
+                                </svg>
+                            </div>
+                            <div class="recomendations__card-prices">
+                                <div class="recomendations__card-old-price">
+                                    500 ₽
+                                </div>
+                                <div class="recomendations__card-new-price">
+                                    250 ₽
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="recomendations__list-item recomendations__list-item--short">
+                    <a href="#" class="recomendations__card recomendations__card--small">
+                        <div class="recomendations__card-bg">
+                            <img src="img/recomedations/9.svg" alt="" class="recomendations__card-bg-image">
+                        </div>
+                        <div class="recomendations__card-tags">
+                            <div class="recomendations__card-tag">
+                                Гайд
+                            </div>
+                        </div>
+                        <h4 class="recomendations__card-title">
+                            Календарь полезных привычек на 2022 год
+                            <img src="img/download.svg" alt="" class="recomendations__card-download-icon">
+                        </h4>
+                    </a>
+                </li>
+
+                <li class="recomendations__list-item">
+                    <a href="#" class="recomendations__card">
+                        <div class="recomendations__card-bg">
+                            <img src="img/recomedations/3.jpg" alt="" class="recomendations__card-bg-image">
+                        </div>
+                        <div class="recomendations__card-tags">
+                            <div class="recomendations__card-tag">
+                                4 декабря
+                            </div>
+                            <div class="recomendations__card-tag">
+                                19:00
+                            </div>
+                        </div>
+                        <h4 class="recomendations__card-title">
+                            Домашние<br> процедуры<br> оздоровления
+                        </h4>
+
+                        <div class="recomendations__card-bottom-row">
+                            <div class="recomendations__card-action">
+                                Подробнее
+                                <svg width="14" height="14" aria-hidden="true" class="icon-camera">
+                                    <use xlink:href="#arrow-right"></use>
+                                </svg>
+                            </div>
+                            <div class="recomendations__card-prices">
+                                <div class="recomendations__card-old-price">
+                                    500 ₽
+                                </div>
+                                <div class="recomendations__card-new-price">
+                                    250 ₽
+                                </div>
+                            </div>
+                        </div>
+
+                    </a>
+                </li>
+                <li class="recomendations__list-item recomendations__list-item--short">
+                    <a href="#" class="recomendations__card recomendations__card--small">
+                        <div class="recomendations__card-bg">
+                            <img src="img/recomedations/10.svg" alt="" class="recomendations__card-bg-image">
+                        </div>
+                        <h4 class="recomendations__card-title">
+                            Подписывайся на наш
+                            Telegram-канал
+                            <img src="img/telegram.svg" alt="" class="recomendations__card-teleram-icon">
+                        </h4>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+
+                </div>
+            </div>
+        </div>
+        <style>
+            .ie-placeholder {
+                z-index: 4000;
+                position: fixed;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                background-color: #202020;
+                color: white;
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                
+            }
+            .ie-placeholder__message {
+                font-size: 2rem;
+                line-height: 1.2;
+                font-weight: 500;
+                margin: auto;
+            }
+            @supports (display: grid) {
+                .ie-placeholder {
+                    display: none;
+                }
+            }
+        </style>
+        <div class="ie-placeholder">
+            <div class="ie-placeholder__message">
+                Извините, ваш браузер не поддерживается
+            </div>
+        </div>        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="js/app.js"></script>
+        <script src="assets/js/backend.js"></script>
+    </div>
+</body>
+
+</html>

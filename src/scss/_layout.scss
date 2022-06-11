@@ -1,0 +1,83 @@
+.container {
+    display: contents;
+
+    @include breakpoint(mobile) {
+        width: 100%;
+        max-width: calc(var(--max-container-width) + 2 * var(--content-padding));
+        margin: 0 auto;
+        padding: 0 var(--content-padding);
+        display: block;
+        @supports (width: max(20vw, 100px)) {
+            padding-left: max(env(safe-area-inset-left, 1.4rem), var(--content-padding));
+            padding-right: max(env(safe-area-inset-right, 1.4rem), var(--content-padding));
+        }
+    }
+   
+}
+
+.page-content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+
+    @include breakpoint(mobile) {
+        padding-top: calc(var(--header-height) + 2.5rem);
+    }
+}
+
+.page-main {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.layout {
+  
+
+    @include breakpointMF(small-tablet) {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+    }
+    @include breakpoint(mobile) {
+        display: contents;
+    }
+}
+
+.layout__row {
+    display: flex;
+
+    @include breakpoint(mobile) {
+        display: contents;
+    }
+    
+}
+
+.layout__sidebar {
+    
+
+    @include breakpointMF(small-tablet) {
+        width: 25.5rem;
+        flex-shrink: 0;
+        display: flex;
+        flex-direction: column;
+        will-change: min-height;
+    }
+}
+
+.layout__main {
+
+    @include breakpointMF(small-tablet) {
+        width: 50%;
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        padding: 2.5rem 3rem;
+    }
+    
+
+    @include breakpoint(mobile) {
+        display: contents;
+    }
+}
