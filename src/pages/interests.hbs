@@ -1,0 +1,172 @@
+{{#extend "layout"}}
+{{#content "main"}}
+
+
+
+<section class="interests">
+    <div class="container">
+        <h1 class="interests__heading">
+            Мои интересы
+        </h1>
+        <div class="interests__heading-text">
+            <p>
+                Укажите свои интересы и мы сможем рекомендовать вам наиболее подходящие продукты.
+            </p>
+        </div>
+        <div class="interests__content">
+            <form action="/" class="interests__form" method="POST">
+                <div class="interests__form-fields">
+                    <div class="interests__form-field">
+                        <label class="checkbox">
+                            <input type="checkbox" class="checkbox__input" name="interest[]">
+                            <span class="checkbox__mark">
+                                <svg width="14" height="14" aria-hidden="true" class="icon-checkmark">
+                                    <use xlink:href="#checkmark"></use>
+                                </svg>
+                            </span>
+                            Обучение
+                        </label>
+                    </div>
+                    <div class="interests__form-field">
+                        <label class="checkbox">
+                            <input type="checkbox" class="checkbox__input" name="interest[]">
+                            <span class="checkbox__mark">
+                                <svg width="14" height="14" aria-hidden="true" class="icon-checkmark">
+                                    <use xlink:href="#checkmark"></use>
+                                </svg>
+                            </span>
+                            Снижение веса
+                        </label>
+                    </div>
+                    <div class="interests__form-field">
+                        <label class="checkbox">
+                            <input type="checkbox" class="checkbox__input" name="interest[]">
+                            <span class="checkbox__mark">
+                                <svg width="14" height="14" aria-hidden="true" class="icon-checkmark">
+                                    <use xlink:href="#checkmark"></use>
+                                </svg>
+                            </span>
+                            Иммунитет
+                        </label>
+                    </div>
+                    <div class="interests__form-field">
+                        <label class="checkbox">
+                            <input type="checkbox" class="checkbox__input" name="interest[]">
+                            <span class="checkbox__mark">
+                                <svg width="14" height="14" aria-hidden="true" class="icon-checkmark">
+                                    <use xlink:href="#checkmark"></use>
+                                </svg>
+                            </span>
+                            Коучинг
+                        </label>
+                    </div>
+                    <div class="interests__form-field">
+                        <label class="checkbox">
+                            <input type="checkbox" class="checkbox__input" name="interest[]" checked="">
+                            <span class="checkbox__mark">
+                                <svg width="14" height="14" aria-hidden="true" class="icon-checkmark">
+                                    <use xlink:href="#checkmark"></use>
+                                </svg>
+                            </span>
+                            Женское здоровье
+                        </label>
+                    </div>
+                    <div class="interests__form-field">
+                        <label class="checkbox">
+                            <input type="checkbox" class="checkbox__input" name="interest[]" checked="">
+                            <span class="checkbox__mark">
+                                <svg width="14" height="14" aria-hidden="true" class="icon-checkmark">
+                                    <use xlink:href="#checkmark"></use>
+                                </svg>
+                            </span>
+                            Рецепты и приготовление пищи
+                        </label>
+                    </div>
+                    <div class="interests__form-field">
+                        <label class="checkbox">
+                            <input type="checkbox" class="checkbox__input" name="interest[]" checked="">
+                            <span class="checkbox__mark">
+                                <svg width="14" height="14" aria-hidden="true" class="icon-checkmark">
+                                    <use xlink:href="#checkmark"></use>
+                                </svg>
+                            </span>
+                            Беременность
+                        </label>
+                    </div>
+                    <div class="interests__form-field">
+                        <label class="checkbox">
+                            <input type="checkbox" class="checkbox__input" name="interest[]" checked="">
+                            <span class="checkbox__mark">
+                                <svg width="14" height="14" aria-hidden="true" class="icon-checkmark">
+                                    <use xlink:href="#checkmark"></use>
+                                </svg>
+                            </span>
+                            Детское здоровье
+                        </label>
+                    </div>
+                    <div class="interests__form-field">
+                        <label class="checkbox">
+                            <input type="checkbox" class="checkbox__input" name="interest[]" checked="">
+                            <span class="checkbox__mark">
+                                <svg width="14" height="14" aria-hidden="true" class="icon-checkmark">
+                                    <use xlink:href="#checkmark"></use>
+                                </svg>
+                            </span>
+                            Стресс
+                        </label>
+                    </div>
+                    <div class="interests__form-field">
+                        <label class="checkbox">
+                            <input type="checkbox" class="checkbox__input" name="interest[]">
+                            <span class="checkbox__mark">
+                                <svg width="14" height="14" aria-hidden="true" class="icon-checkmark">
+                                    <use xlink:href="#checkmark"></use>
+                                </svg>
+                            </span>
+                            Здоровое пищеварение
+                        </label>
+                    </div>
+                    <div class="interests__form-field">
+                        <label class="checkbox">
+                            <input type="checkbox" class="checkbox__input" name="interest[]">
+                            <span class="checkbox__mark">
+                                <svg width="14" height="14" aria-hidden="true" class="icon-checkmark">
+                                    <use xlink:href="#checkmark"></use>
+                                </svg>
+                            </span>
+                            Мужское здоровье
+                        </label>
+                    </div>
+                    <div class="interests__form-field">
+                        <label class="checkbox">
+                            <input type="checkbox" class="checkbox__input" name="interest[]">
+                            <span class="checkbox__mark">
+                                <svg width="14" height="14" aria-hidden="true" class="icon-checkmark">
+                                    <use xlink:href="#checkmark"></use>
+                                </svg>
+                            </span>
+                            Нутрицевтики и БаД
+                        </label>
+                    </div>
+                </div>
+                <div class="interests__form-controls">
+                    <button class="interests__form-submit" type="submit">
+                        Сохранить
+                    </button>
+                    <button class="interests__form-reset" type="reset">
+                        Сбросить фильтр
+                        <svg width="14" height="14" aria-hidden="true" class="icon-trash">
+                            <use xlink:href="#trash"></use>
+                        </svg>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+
+
+
+
+{{/content}}
+{{/extend}}

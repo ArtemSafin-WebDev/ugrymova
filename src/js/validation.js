@@ -50,6 +50,24 @@ window.Parsley.addValidator('date', {
     },
 });
 
+window.Parsley.addValidator('digits', {
+    requirementType: 'string',
+    validateString: function(value, requirement) {
+        const numberOfDigits = Number(requirement);
+        if (isNaN(numberOfDigits)) {
+            return false;
+        }
+        const re = new RegExp(`^[0-9]{${numberOfDigits}}$`);
+
+        return re.test(value.replace(/\s+/g, ''));
+    },
+    messages: {
+        en: 'Required field',
+        ru: 'Обязательное поле'
+    },
+    priority: 33
+});
+
 Parsley.addMessages('ru', {
     defaultMessage: 'Некорректное значение.',
     type: {

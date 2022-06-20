@@ -1,0 +1,294 @@
+{{#extend "layout"}}
+{{#content "main"}}
+
+
+
+<section class="notifications">
+    <div class="container">
+        <h1 class="notifications__heading">
+            Центр уведомлений
+        </h1>
+        <div class="notifications__heading-text">
+            <p>
+                Здесь отображаются все ваши действия на сервисе, а также актуальные предложения и скидки
+            </p>
+        </div>
+        <form class="notifications__content" method="POST" action="/">
+            <div class="notifications__filter">
+                <div class="notifications__selected">
+                    Выбрано 3 уведомления
+                </div>
+                <div class="notifications__filter-controls">
+
+                    <button class="notifications__filter-btn active" type="submit">
+                        Удалить
+                        <svg width="14" height="14" aria-hidden="true" class="icon-trash">
+                            <use xlink:href="#trash"></use>
+                        </svg>
+                    </button>
+
+                </div>
+            </div>
+            <ul class="notifications__list">
+                <li class="notifications__list-item">
+                    <a href="#" class="notifications__card notifications__card--new">
+                        <img src="img/notifications/1.svg" alt="" class="notifications__card-icon">
+                        <div class="notifications__card-content">
+                            <h4 class="notifications__card-title">
+                                Успейте посмотреть вебинар «Здоровые волосы»
+                            </h4>
+                            <div class="notifications__card-text">
+                                <p>
+                                    Вебинар уже завершился. Обсудили причины, какие анализы сдавать и схемы коррекции.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="notifications__card-info">
+
+                            <div class="notifications__card-mark">
+                                Важное
+                            </div>
+                            <div class="notifications__card-date">
+                                12 февраля
+                            </div>
+                            <label class="checkbox">
+                                <input type="checkbox" class="checkbox__input" checked="">
+                                <span class="checkbox__mark">
+                                    <svg width="14" height="14" aria-hidden="true" class="icon-checkmark">
+                                        <use xlink:href="#checkmark"></use>
+                                    </svg>
+                                </span>
+                            </label>
+                        </div>
+                    </a>
+                </li>
+                <li class="notifications__list-item">
+                    <a href="#" class="notifications__card">
+                        <img src="img/notifications/2.svg" alt="" class="notifications__card-icon">
+                        <div class="notifications__card-content">
+                            <h4 class="notifications__card-title">
+                                Истекает подписка на канал в Telegram
+                            </h4>
+                            <div class="notifications__card-text">
+                                <p>
+                                    Для постоянного доступа к полезному материалу от Ольги Угрюмовой вам необходимо
+                                    оплатить подписку
+                                </p>
+                            </div>
+                        </div>
+                        <div class="notifications__card-info">
+
+
+                            <div class="notifications__card-date">
+                                12 февраля
+                            </div>
+                            <label class="checkbox">
+                                <input type="checkbox" class="checkbox__input">
+                                <span class="checkbox__mark">
+                                    <svg width="14" height="14" aria-hidden="true" class="icon-checkmark">
+                                        <use xlink:href="#checkmark"></use>
+                                    </svg>
+                                </span>
+                            </label>
+                        </div>
+                    </a>
+                </li>
+                <li class="notifications__list-item">
+                    <a href="#" class="notifications__card notifications__card--new">
+                        <img src="img/notifications/3.svg" alt="" class="notifications__card-icon">
+                        <div class="notifications__card-content">
+                            <h4 class="notifications__card-title">
+                                Новое видео на Youtube «Как разделать рыбу»
+                            </h4>
+                            <div class="notifications__card-text">
+                                <p>
+                                    В этом видео мы с поваром Дмитрием Хохловым рассказываем о том, как правильно
+                                    разделать тушку рыбы, как сделать это быстро и легко
+                                </p>
+                            </div>
+                        </div>
+                        <div class="notifications__card-info">
+
+
+                            <div class="notifications__card-date">
+                                11 февраля
+                            </div>
+                            <label class="checkbox">
+                                <input type="checkbox" class="checkbox__input">
+                                <span class="checkbox__mark">
+                                    <svg width="14" height="14" aria-hidden="true" class="icon-checkmark">
+                                        <use xlink:href="#checkmark"></use>
+                                    </svg>
+                                </span>
+                            </label>
+                        </div>
+                    </a>
+                </li>
+                <li class="notifications__list-item">
+                    <a href="#" class="notifications__card">
+                        <img src="img/notifications/4.svg" alt="" class="notifications__card-icon">
+                        <div class="notifications__card-content">
+                            <h4 class="notifications__card-title">
+                                Скидка на вебинар «Домашние процедуры оздоровления»
+                            </h4>
+                            <div class="notifications__card-text">
+                                <p>
+                                    Только 3 дня вы можете приобрести вебинар «Домашние процедуры оздоровления» со
+                                    скидкой 20%. Промокод: PRO20
+                                </p>
+                            </div>
+                        </div>
+                        <div class="notifications__card-info">
+
+
+                            <div class="notifications__card-mark">
+                                Важное
+                            </div>
+                            <div class="notifications__card-date">
+                                10 февраля
+                            </div>
+                            <label class="checkbox">
+                                <input type="checkbox" class="checkbox__input">
+                                <span class="checkbox__mark">
+                                    <svg width="14" height="14" aria-hidden="true" class="icon-checkmark">
+                                        <use xlink:href="#checkmark"></use>
+                                    </svg>
+                                </span>
+                            </label>
+                        </div>
+                    </a>
+                </li>
+                <li class="notifications__list-item">
+                    <a href="#" class="notifications__card">
+                        <img src="img/notifications/5.svg" alt="" class="notifications__card-icon">
+                        <div class="notifications__card-content">
+                            <h4 class="notifications__card-title">
+                                Поздравляем Вас с днем рождения!
+                            </h4>
+                            <div class="notifications__card-text">
+                                <p>
+                                    От всей души поздравляем Вас! Будьте вегда прекрасны! Специально для Вас мы
+                                    подготовили подарок - эксклюзивная скидка на все материалы 30%. Скидка действует в
+                                    течение 4 дней
+                                </p>
+                            </div>
+                        </div>
+                        <div class="notifications__card-info">
+
+
+                            <div class="notifications__card-date">
+                                10 февраля
+                            </div>
+                            <label class="checkbox">
+                                <input type="checkbox" class="checkbox__input">
+                                <span class="checkbox__mark">
+                                    <svg width="14" height="14" aria-hidden="true" class="icon-checkmark">
+                                        <use xlink:href="#checkmark"></use>
+                                    </svg>
+                                </span>
+                            </label>
+                        </div>
+                    </a>
+                </li>
+
+                <li class="notifications__list-item">
+                    <a href="#" class="notifications__card notifications__card--new">
+                        <img src="img/notifications/1.svg" alt="" class="notifications__card-icon">
+                        <div class="notifications__card-content">
+                            <h4 class="notifications__card-title">
+                                Успейте посмотреть вебинар «Азбука детского питания от 0 до 2 лет»
+                            </h4>
+                            <div class="notifications__card-text">
+                                <p>
+                                    Вебинар уже завершился. Обсудили причины, какие анализы сдавать и схемы коррекции.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="notifications__card-info">
+
+
+                            <div class="notifications__card-date">
+                                8 февраля
+                            </div>
+                            <label class="checkbox">
+                                <input type="checkbox" class="checkbox__input">
+                                <span class="checkbox__mark">
+                                    <svg width="14" height="14" aria-hidden="true" class="icon-checkmark">
+                                        <use xlink:href="#checkmark"></use>
+                                    </svg>
+                                </span>
+                            </label>
+                        </div>
+                    </a>
+                </li>
+
+                <li class="notifications__list-item">
+                    <a href="#" class="notifications__card">
+                        <img src="img/notifications/4.svg" alt="" class="notifications__card-icon">
+                        <div class="notifications__card-content">
+                            <h4 class="notifications__card-title">
+                                Скидка на курс «Здоровье желудка»
+                            </h4>
+                            <div class="notifications__card-text">
+                                <p>
+                                    Только 3 дня вы можете приобрести курс «Здоровье желудка» со скидкой 20%. Промокод:
+                                    PRO20
+                                </p>
+                            </div>
+                        </div>
+                        <div class="notifications__card-info">
+                            <div class="notifications__card-date">
+                                5 февраля
+                            </div>
+                            <label class="checkbox">
+                                <input type="checkbox" class="checkbox__input">
+                                <span class="checkbox__mark">
+                                    <svg width="14" height="14" aria-hidden="true" class="icon-checkmark">
+                                        <use xlink:href="#checkmark"></use>
+                                    </svg>
+                                </span>
+                            </label>
+                        </div>
+                    </a>
+                </li>
+
+                <li class="notifications__list-item">
+                    <a href="#" class="notifications__card notifications__card--new">
+                        <img src="img/notifications/1.svg" alt="" class="notifications__card-icon">
+                        <div class="notifications__card-content">
+                            <h4 class="notifications__card-title">
+                                Успейте посмотреть вебинар «Натуральный сахарозаменитель»
+                            </h4>
+                            <div class="notifications__card-text">
+                                <p>
+                                    Вебинар уже завершился. Обсудили причины, какие анализы сдавать и схемы коррекции.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="notifications__card-info">
+
+
+                            <div class="notifications__card-date">
+                                5 февраля
+                            </div>
+                            <label class="checkbox">
+                                <input type="checkbox" class="checkbox__input">
+                                <span class="checkbox__mark">
+                                    <svg width="14" height="14" aria-hidden="true" class="icon-checkmark">
+                                        <use xlink:href="#checkmark"></use>
+                                    </svg>
+                                </span>
+                            </label>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </form>
+    </div>
+</section>
+
+
+
+
+{{/content}}
+{{/extend}}

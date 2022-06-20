@@ -52,6 +52,74 @@
     }
 }
 
+@mixin hasDatepicker {
+    .datepicker.dropdown-menu {
+        top: 100% !important;
+        right: auto !important;
+        left: 0 !important;
+        bottom: auto !important;
+        margin-top: 1rem;
+        border-radius: 1rem;
+        border: none;
+        font-size: 1.2rem;
+        line-height: 1.6;
+        box-shadow: 0 0 1rem rgba(black, 0.1);
+        padding: 1rem;
+        width: 21rem;
+        opacity: 1;
+
+        @include breakpoint(mobile) {
+            top: 100% !important;
+            right: auto !important;
+            left: 0 !important;
+            bottom: auto !important;
+        }
+    }
+
+    .datepicker-dropdown:before,
+    .datepicker-dropdown:after {
+        display: none;
+    }
+
+    .datepicker table tr td.active,
+    .datepicker table tr td.active.disabled,
+    .datepicker table tr td.active.disabled:hover,
+    .datepicker table tr td.active:hover {
+        text-shadow: none;
+        background: var(--primary-color);
+    }
+
+    .datepicker table tr td span.active.active,
+    .datepicker table tr td span.active.disabled,
+    .datepicker table tr td span.active.disabled.active,
+    .datepicker table tr td span.active.disabled.disabled,
+    .datepicker table tr td span.active.disabled:active,
+    .datepicker table tr td span.active.disabled:hover,
+    .datepicker table tr td span.active.disabled:hover.active,
+    .datepicker table tr td span.active.disabled:hover.disabled,
+    .datepicker table tr td span.active.disabled:hover:active,
+    .datepicker table tr td span.active.disabled:hover:hover,
+    .datepicker table tr td span.active.disabled:hover[disabled],
+    .datepicker table tr td span.active.disabled[disabled],
+    .datepicker table tr td span.active:active,
+    .datepicker table tr td span.active:hover,
+    .datepicker table tr td span.active:hover.active,
+    .datepicker table tr td span.active:hover.disabled,
+    .datepicker table tr td span.active:hover:active,
+    .datepicker table tr td span.active:hover:hover,
+    .datepicker table tr td span.active:hover[disabled],
+    .datepicker table tr td span.active[disabled] {
+        background: var(--primary-color);
+    }
+
+    .datepicker table tr td span.active,
+    .datepicker table tr td span.active.disabled,
+    .datepicker table tr td span.active.disabled:hover,
+    .datepicker table tr td span.active:hover {
+        background: var(--primary-color);
+    }
+}
+
 @mixin noScrollbar {
     scrollbar-width: none;
     -ms-overflow-style: none;
@@ -80,7 +148,7 @@
 
     &::-webkit-scrollbar-thumb {
         background-color: #ff9770;
-        border-radius: .5rem;
+        border-radius: 0.5rem;
     }
 
     &::-webkit-scrollbar-button {

@@ -1,0 +1,124 @@
+{{#extend "layout"}}
+{{#content "main"}}
+
+
+
+<section class="notifications">
+    <div class="container">
+        <h1 class="notifications__heading">
+            Центр уведомлений
+        </h1>
+        <div class="notifications__heading-text">
+            <p>
+                Здесь отображаются все ваши действия на сервисе, а также актуальные предложения и скидки
+            </p>
+        </div>
+        <div class="notifications__content">
+            <div class="notifications__filter">
+                <div class="notifications__filter-categories">
+                    <a href="#" class="notifications__filter-categories-link">
+                        Все
+                        <span class="notifications__filter-categories-link-count">
+                            20
+                        </span>
+                    </a>
+                    <a href="notifications-important.html" class="notifications__filter-categories-link active">
+                        Важное
+                        <span class="notifications__filter-categories-link-count">
+                            2
+                        </span>
+                    </a>
+                    <a href="#" class="notifications__filter-categories-link">
+                        События
+                        <span class="notifications__filter-categories-link-count">
+                            4
+                        </span>
+                    </a>
+                    <a href="#" class="notifications__filter-categories-link">
+                        Ваши действия
+                        <span class="notifications__filter-categories-link-count">
+                            10
+                        </span>
+                    </a>
+
+                </div>
+                <div class="notifications__filter-controls">
+                    <a href="#" class="notifications__filter-btn active">
+
+                        Отметить всё прочитанным
+                        <svg width="14" height="14" aria-hidden="true" class="icon-eye">
+                            <use xlink:href="#eye"></use>
+                        </svg>
+                    </a>
+                    <a href="notifications-delete.html" class="notifications__filter-btn">
+
+                        Удалить
+                        <svg width="14" height="14" aria-hidden="true" class="icon-trash">
+                            <use xlink:href="#trash"></use>
+                        </svg>
+                    </a>
+
+                </div>
+            </div>
+            <ul class="notifications__list">
+                <li class="notifications__list-item">
+                    <a href="#" class="notifications__card notifications__card--new">
+                        <img src="img/notifications/1.svg" alt="" class="notifications__card-icon">
+                        <div class="notifications__card-content">
+                            <h4 class="notifications__card-title">
+                                Успейте посмотреть вебинар «Здоровые волосы»
+                            </h4>
+                            <div class="notifications__card-text">
+                                <p>
+                                    Вебинар уже завершился. Обсудили причины, какие анализы сдавать и схемы коррекции.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="notifications__card-info">
+
+                            <div class="notifications__card-mark">
+                                Важное
+                            </div>
+                            <div class="notifications__card-date">
+                                12 февраля
+                            </div>
+                        </div>
+                    </a>
+                </li>
+            
+                <li class="notifications__list-item">
+                    <a href="#" class="notifications__card">
+                        <img src="img/notifications/4.svg" alt="" class="notifications__card-icon">
+                        <div class="notifications__card-content">
+                            <h4 class="notifications__card-title">
+                                Скидка на вебинар «Домашние процедуры оздоровления»
+                            </h4>
+                            <div class="notifications__card-text">
+                                <p>
+                                    Только 3 дня вы можете приобрести вебинар «Домашние процедуры оздоровления» со
+                                    скидкой 20%. Промокод: PRO20
+                                </p>
+                            </div>
+                        </div>
+                        <div class="notifications__card-info">
+
+
+                            <div class="notifications__card-mark">
+                                Важное
+                            </div>
+                            <div class="notifications__card-date">
+                                10 февраля
+                            </div>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+
+
+
+{{/content}}
+{{/extend}}

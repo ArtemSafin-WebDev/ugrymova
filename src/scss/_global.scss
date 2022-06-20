@@ -9,7 +9,10 @@
 :root {
     --max-container-width: 140rem;
     --content-padding: 3rem;
-    --primary-color: #F13C77;
+    --primary-color: #f13c77;
+    --orange: #ff9770;
+    --orange-hover: #F08861;
+    --grey: #9a85a0;
     --text-color: #301039;
     --rubik: 'Rubik', sans-serif;
     --header-height: 5rem;
@@ -31,7 +34,7 @@ html {
     @include breakpoint(mobile) {
         font-size: 10px;
     }
-} 
+}
 
 body {
     font-size: 1.6rem;
@@ -41,7 +44,7 @@ body {
     flex-direction: column;
     font-family: var(--rubik);
     color: var(--text-color);
-    background: #F4F5F9;
+    background: #f4f5f9;
 }
 
 main {
@@ -187,8 +190,6 @@ th {
     vertical-align: top;
 }
 
-
-
 ::selection {
     color: white;
     background-color: var(--primary-color);
@@ -205,4 +206,20 @@ select:-webkit-autofill,
 select:-webkit-autofill:hover,
 select:-webkit-autofill:focus {
     background-color: transparent;
+}
+
+.parsley-errors-list.filled {
+    color: #ff4343;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 1.4rem;    
+    margin-top: 0.4rem;
+}
+
+
+.section-highlighted {
+    // box-shadow: 0 0 0 500vmax rgba(#000000, 0.35);
+    position: relative;
+    z-index: 130;
 }

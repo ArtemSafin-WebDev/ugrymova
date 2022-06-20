@@ -12,6 +12,11 @@ import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import events from './events';
 import stickySidebar from './stickySidebar';
+import selectedNotifications from './selectedNotifications';
+import datepicker from './datepicker';
+import highlightSections from './highlightSections';
+import tutorial from './tutorial';
+import equalHeight from './equalHeight';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -22,11 +27,16 @@ document.addEventListener('DOMContentLoaded', function () {
     validation();
     anchorLinks();
     accordions();
+    datepicker();
+    highlightSections();
     modals();
     tabs();
     menu();
     events();
     stickySidebar();
+    selectedNotifications();
+    tutorial();
+    equalHeight();
 });
 
 document.addEventListener('lazyloaded', () => {

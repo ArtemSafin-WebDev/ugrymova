@@ -23,7 +23,7 @@ export default function masks() {
     });
 
     const onlyNumericInputsNoFormatting = Array.from(document.querySelectorAll('.js-numeric-input'));
-    
+
     onlyNumericInputsNoFormatting.forEach(input => {
         input.addEventListener('input', () => {
             const value = input.value;
@@ -34,5 +34,12 @@ export default function masks() {
                 input.value = newCleanedValue;
             }
         });
+    });
+
+    const customMaskInputs = Array.from(document.querySelectorAll('.js-custom-mask'));
+    customMaskInputs.forEach(input => {
+
+        const instance = new Inputmask({ mask: input.hasAttribute('data-mask') ? input.getAttribute('data-mask') : '999', showMaskOnFocus: false, showMaskOnHover: false, placeholder: '_' });
+        instance.mask(input);
     });
 }

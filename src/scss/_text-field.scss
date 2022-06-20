@@ -1,0 +1,72 @@
+.text-field {
+    display: flex;
+    flex-direction: column;
+}
+
+.text-field__label-text {
+    display: block;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.2rem;
+    color: var(--grey);
+    margin-bottom: 0.6rem;
+    display: flex;
+    align-items: center;
+    gap: .3rem;
+
+    svg {
+        flex-shrink: 0;
+        width: 1.2rem;
+        height: 1.2rem;
+        fill: #5AD1A9;
+    }
+}
+
+.text-field__input {
+ 
+    width: 100%;
+    padding: 0 2rem;
+    padding-right: 3.5rem;
+    border: .1rem solid #eceae7;
+    border-radius: 0.6rem;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.7rem;
+    color: var(--text-color);
+    height: 4.3rem;
+    display: block;
+    transition: border-color .2s;
+
+    .no-touch &:hover {
+        border-color: #CECDCC;
+    }
+
+   
+
+    &:focus {
+        border-color: #9A85A0;
+    }
+
+    &.parsley-error {
+        border-color: #FF4343 !important;
+    }
+    &--pencil {
+        background-image: url('../img/pencil.svg');
+        background-repeat: no-repeat;
+        background-position: right 1.6rem center;
+        background-size: 1.8rem 1.8rem;
+        
+    }
+
+    &--calendar {
+        background-image: url('../img/calendar.svg');
+        background-repeat: no-repeat;
+        background-position: right 1.6rem center;
+        background-size: 1.8rem 1.8rem;
+    }
+    @include placeholder {
+        color: var(--grey);
+    }
+}

@@ -10,9 +10,31 @@
     background: #ff9770;
     border-radius: 0.6rem;
     color: white;
-    padding: .9rem 4.5rem;
+    padding: 1rem 4.5rem;
+    transition: color .2s, background-color .2s, border-color .2s;
+    border: .1rem solid var(--orange);
+
+    @include breakpoint(mobile) {
+        padding: 1rem 4rem;
+    }
     &:link,
     &:visited {
         color: white;
+    }
+
+    &--hollow {
+        background: transparent;
+        color: var(--orange);
+        &:link,
+        &:visited {
+            color: var(--orange);
+        }
+    }
+
+    .no-touch &:hover,
+    .touch &:active {
+        background-color: var(--orange-hover);
+        color: white;
+        border-color: var(--orange-hover);
     }
 }

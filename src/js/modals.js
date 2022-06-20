@@ -28,7 +28,11 @@ export default function modals() {
             document.body.classList.add('modal-open');
             window.activeModal = modal;
 
-            const openModalEvent = new CustomEvent('openmodal');
+            const openModalEvent = new CustomEvent('openmodal', {
+                detail: {
+                    modal: modal
+                }
+            });
             document.dispatchEvent(openModalEvent);
         };
         if (window.activeModal) {
@@ -80,4 +84,9 @@ export default function modals() {
             closeModal(window.activeModal);
         }
     });
+
+    if (window.location.hash) {
+        console.log("Hash", window.location.hash)
+        openModal(window.location.hash)
+    }
 }

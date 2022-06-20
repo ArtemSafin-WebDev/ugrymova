@@ -1,0 +1,122 @@
+{{#extend "layout"}}
+{{#content "main"}}
+
+
+
+<section class="account">
+    <div class="container">
+        <h1 class="account__heading">
+            Личные данные
+        </h1>
+        <div class="account__heading-heading-text">
+            <p>
+                Здесь вы можете отредактировать информацию о себе и добавить недостающую
+            </p>
+        </div>
+        <div class="account__content">
+            <div class="account__nav">
+                <div class="account__nav-links">
+
+
+                    <a href="account.html" class="account__nav-link active">
+                        Общая информация
+                    </a>
+                    <a href="account-password.html" class="account__nav-link">
+                        Сброс пароля
+                    </a>
+
+                </div>
+            </div>
+            <form action="/" method="POST" class="account__form" data-need-validation="">
+                <div class="account__form-fields">
+                    <div class="account__form-field">
+                        <label class="text-field">
+                            <span class="text-field__label-text">
+                                Фамилия
+                            </span>
+                            <input type="text" class="text-field__input text-field__input--pencil" value="Иванова"
+                                required="" name="lastname">
+                        </label>
+                    </div>
+                    <div class="account__form-field">
+                        <label class="text-field">
+                            <span class="text-field__label-text">
+                                Имя
+                            </span>
+                            <input type="text" class="text-field__input text-field__input--pencil" value="Мария"
+                                required="" name="firstname">
+                        </label>
+                    </div>
+                    <div class="account__form-field">
+                        <span class="text-field__label-text">
+                            Пол
+                        </span>
+                        <div class="account__form-radios">
+                            <label class="radio">
+                                <input type="radio" name="gender" value="M" class="radio__input" checked="">
+                                <span class="radio__mark">
+
+                                </span>
+                                Мужской
+                            </label>
+                            <label class="radio">
+                                <input type="radio" name="gender" value="F" class="radio__input">
+                                <span class="radio__mark">
+
+                                </span>
+                                Женский
+                            </label>
+                        </div>
+                    </div>
+                    <div class="account__form-field" id="birthdate">
+                        <label class="text-field">
+                            <span class="text-field__label-text">
+                                Дата рождения
+                            </span>
+                            <input type="tel" class="text-field__input text-field__input--calendar js-datepicker"
+                                value="06.03.1991" required="" name="birthdate" data-picker-container="#birthdate"
+                                readonly="">
+                        </label>
+                    </div>
+
+                    <div class="account__form-field">
+                        <label class="text-field">
+                            <span class="text-field__label-text">
+                                Телефон
+                            </span>
+                            <input type="tel" class="text-field__input text-field__input--pencil js-phone-input"
+                                value="+7 (906) 123-12-34" required="" name="phone" data-parsley-phone="">
+                        </label>
+                    </div>
+
+                    <div class="account__form-field">
+                        <a href="#change-email" class="account__change-email">
+                            <label class="text-field">
+                                <span class="text-field__label-text">
+                                    Email
+                                    <svg width="14" height="14" aria-hidden="true" class="icon-verified">
+                                        <use xlink:href="#verified"></use>
+                                    </svg>
+                                </span>
+                                <input type="email" class="text-field__input text-field__input--pencil"
+                                    value="ivanova.8513@mail.ru" required="" name="email" readonly="">
+                            </label>
+                        </a>
+                    </div>
+                </div>
+                <div class="account__form-controls">
+                    <button class="account__form-submit" type="submit">
+                        Сохранить изменения
+                    </button>
+                </div>
+
+            </form>
+        </div>
+    </div>
+</section>
+
+
+
+
+{{/content}}
+{{/extend}}
